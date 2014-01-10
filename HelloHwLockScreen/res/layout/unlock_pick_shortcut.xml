@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/allapp_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:drawSelectorOnTop="false"
+    android:nextFocusDown="@id/allapp_content"
+    android:nextFocusLeft="@id/allapp_content"
+    android:nextFocusRight="@id/allapp_content"
+    android:nextFocusUp="@id/allapp_content"
+    android:numColumns="4"
+    android:scrollbarStyle="outsideInset"
+    android:verticalSpacing="3.0dip" />

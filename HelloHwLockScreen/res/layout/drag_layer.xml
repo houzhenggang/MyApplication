@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.android.slideunlock.DragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/draglayer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@id/camera_container"
+        android:layout_width="@dimen/camera_container_width"
+        android:layout_height="@dimen/camera_container_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/camera_imageview_to_parent_bottom"
+        android:paddingRight="@dimen/camera_imageview_to_parent_right" >
+
+        <ImageView
+            android:id="@id/camera_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/camera_app_accessibility_description"
+            android:focusable="true"
+            android:src="@drawable/slide_ic_camera_normal" />
+    </RelativeLayout>
+
+</com.huawei.android.slideunlock.DragLayer>

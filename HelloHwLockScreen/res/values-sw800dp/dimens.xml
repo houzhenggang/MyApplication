@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="unlock_app_radius">302.0px</dimen>
+    <dimen name="app_translate_offset">20.0px</dimen>
+    <dimen name="line_ring_clip_radius">214.0px</dimen>
+    <dimen name="color_ring_midle_radius">214.0px</dimen>
+    <dimen name="cover_width">177.0px</dimen>
+    <dimen name="cover_height">102.0px</dimen>
+    <dimen name="first_arrow_padding">160.0px</dimen>
+    <dimen name="second_arrow_padding">180.0px</dimen>
+    <dimen name="third_arrow_padding">200.0px</dimen>
+    <dimen name="color_ring_radius">245.0px</dimen>
+    <dimen name="fix_icon_width">0.0dip</dimen>
+    <dimen name="fix_icon_height">0.0dip</dimen>
+</resources>

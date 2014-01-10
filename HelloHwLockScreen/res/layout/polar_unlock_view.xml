@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.android.polarunlock.PolarUnlockView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/polar_unlock_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/polar_background_unlock"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@id/leftApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/simple_app_margin"
+        android:src="@drawable/polar_ic_camera" />
+
+    <ImageView
+        android:id="@id/rightApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/simple_app_margin"
+        android:src="@drawable/polar_ic_lock" />
+
+    <ImageView
+        android:id="@id/unlockKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/polar_ic_unlock" />
+
+</com.huawei.android.polarunlock.PolarUnlockView>

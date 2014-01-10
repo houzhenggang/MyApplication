@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lockscreen xmlns:lockscreen="http://schemas.android.com/apk/prv/res/">
+    <lockscreen_unlockapp lockscreen:index="0" lockscreen:action="com.huawei.action.VOICE_ASSISTANT" lockscreen:bundle_key="start_voice_action" lockscreen:bundle_value_int="1" lockscreen:name="VoiceCall" lockscreen:drawable="com.huawei.android.hwlockscreen:drawable/carmode_voicedialer" lockscreen:listname="com.huawei.android.hwlockscreen:string/mms_app_name" />
+    <lockscreen_unlockapp lockscreen:index="2" lockscreen:action="com.huawei.action.VOICE_ASSISTANT" lockscreen:bundle_key="start_voice_action" lockscreen:bundle_value_int="2" lockscreen:name="VoiceSms" lockscreen:drawable="com.huawei.android.hwlockscreen:drawable/carmode_voicemsg" lockscreen:listname="com.huawei.android.hwlockscreen:string/calllog_app_name" />
+    <lockscreen_unlockapp lockscreen:index="1" lockscreen:action="android.intent.action.VIEW" lockscreen:category="android.intent.category.LAUNCHER" lockscreen:name="Location" lockscreen:packagename="com.mapbar.android.mapbarmap" lockscreen:classname="com.mapbar.android.mapbarmap.MapViewActivity" lockscreen:drawable="com.huawei.android.hwlockscreen:drawable/carmode_location" lockscreen:listname="com.huawei.android.hwlockscreen:string/camera_app_name" />
+    <lockscreen_unlockapp lockscreen:index="3" lockscreen:name="Unlock" lockscreen:drawable="com.huawei.android.hwlockscreen:drawable/unlock_home" lockscreen:listname="com.huawei.android.hwlockscreen:string/unlock_app_name" />
+</lockscreen>

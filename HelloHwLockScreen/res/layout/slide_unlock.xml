@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.android.slideunlock.SlideUnlockScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@id/chargingstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/chargingstatus_margin_top"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/chargingstatus_textsize" />
+
+    <TextView
+        android:id="@id/ownerinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ownerinfo_margin_top"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/ownerinfo_textsize" />
+
+    <LinearLayout
+        android:id="@id/sldie_event_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/slide_event_view_margin_top" >
+
+        <include layout="@layout/slide_event_notify_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/locktip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/slide_unlocktip_margin_bottom"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/slide_to_unlock"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/unlocktip_textsize" />
+
+</com.huawei.android.slideunlock.SlideUnlockScreen>

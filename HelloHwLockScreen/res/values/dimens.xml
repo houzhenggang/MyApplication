@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="unlock_app_radius">302.0px</dimen>
+    <dimen name="app_translate_offset">20.0px</dimen>
+    <dimen name="line_ring_clip_radius">214.0px</dimen>
+    <dimen name="color_ring_midle_radius">214.0px</dimen>
+    <dimen name="cover_width">177.0px</dimen>
+    <dimen name="cover_height">102.0px</dimen>
+    <dimen name="fix_left">0.0dip</dimen>
+    <dimen name="fix_right">0.0dip</dimen>
+    <dimen name="first_arrow_padding">160.0px</dimen>
+    <dimen name="second_arrow_padding">180.0px</dimen>
+    <dimen name="third_arrow_padding">200.0px</dimen>
+    <dimen name="color_ring_radius">245.0px</dimen>
+    <dimen name="music_pre_next_margin">30.0dip</dimen>
+    <dimen name="music_trackcover_width">131.0dip</dimen>
+    <dimen name="music_trackcover_height">77.0dip</dimen>
+    <dimen name="fix_emergency_width">100.0px</dimen>
+    <dimen name="camera_container_width">80.0dip</dimen>
+    <dimen name="camera_container_height">80.0dip</dimen>
+    <dimen name="camera_imageview_to_parent_right">20.0dip</dimen>
+    <dimen name="camera_imageview_to_parent_bottom">20.0dip</dimen>
+    <dimen name="camera_unlock_distance">0.30000007px</dimen>
+    <dimen name="camera_unlock_distance_move">0.5px</dimen>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.android.simpleunlock.SimpleEventNotifyView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/simple_event_notify_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@id/mmsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_event_margin"
+        android:src="@drawable/simple_ic_mms" />
+
+    <TextView
+        android:id="@id/mmsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_event_margin"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/simple_num_textsize" />
+
+    <ImageView
+        android:id="@id/separator0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_separator_margin"
+        android:src="@drawable/simple_separator" />
+
+    <ImageView
+        android:id="@id/callImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_event_margin"
+        android:src="@drawable/simple_ic_call" />
+
+    <TextView
+        android:id="@id/callNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_event_margin"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/simple_num_textsize" />
+
+    <ImageView
+        android:id="@id/separator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_separator_margin"
+        android:src="@drawable/simple_separator" />
+
+    <ImageView
+        android:id="@id/emailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_event_margin"
+        android:src="@drawable/simple_ic_email" />
+
+    <TextView
+        android:id="@id/emailNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_event_margin"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/simple_num_textsize" />
+
+</com.huawei.android.simpleunlock.SimpleEventNotifyView>

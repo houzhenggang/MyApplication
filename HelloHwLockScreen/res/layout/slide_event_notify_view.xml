@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.android.slideunlock.SlideEventNotifyView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/slide_event_notify_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@id/new_mms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/slide_event_margin"
+        android:background="@drawable/slide_ring" >
+
+        <ImageView
+            android:id="@id/mmsImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/slide_event_image_margin_top"
+            android:src="@drawable/slide_mms" />
+
+        <TextView
+            android:id="@id/mmsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mmsImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/slide_event_num_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/slide_num_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/miss_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/slide_event_margin"
+        android:background="@drawable/slide_ring" >
+
+        <ImageView
+            android:id="@id/callImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/slide_event_image_margin_top"
+            android:src="@drawable/slide_call" />
+
+        <TextView
+            android:id="@id/callNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/slide_event_num_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/slide_num_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/unread_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/slide_event_margin"
+        android:background="@drawable/slide_ring" >
+
+        <ImageView
+            android:id="@id/emailImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/slide_event_image_margin_top"
+            android:src="@drawable/slide_email" />
+
+        <TextView
+            android:id="@id/emailNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/slide_event_num_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/slide_num_textsize" />
+    </RelativeLayout>
+
+</com.huawei.android.slideunlock.SlideEventNotifyView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="light_spot_side_initlize">386.0px</dimen>
+    <dimen name="highIndicator_marginBottom_value">260.0dip</dimen>
+    <dimen name="mediumIndicator_marginBottom_value">246.0dip</dimen>
+    <dimen name="lowIndicator_marginBottom_value">232.0dip</dimen>
+    <dimen name="power_light_marginBottom_value">181.29999dip</dimen>
+    <dimen name="power_button_marginBottom_value">181.29999dip</dimen>
+</resources>

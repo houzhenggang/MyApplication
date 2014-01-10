@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="degree">
+        <item>℃</item>
+        <item>℉</item>
+    </string-array>
+    <string-array name="wallpapers">
+        <item>unlock_wallpaper_1</item>
+        <item>unlock_wallpaper_2</item>
+        <item>unlock_wallpaper_3</item>
+        <item>unlock_wallpaper_4</item>
+        <item>unlock_wallpaper_5</item>
+        <item>unlock_wallpaper_6</item>
+        <item>unlock_wallpaper_7</item>
+        <item>unlock_wallpaper_8</item>
+        <item>unlock_wallpaper_9</item>
+        <item>unlock_wallpaper_10</item>
+        <item>unlock_wallpaper_11</item>
+        <item>unlock_wallpaper_12</item>
+    </string-array>
+</resources>

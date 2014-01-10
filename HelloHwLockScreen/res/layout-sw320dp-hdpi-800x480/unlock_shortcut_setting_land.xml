@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@id/set_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15.0dip"
+        android:ellipsize="marquee"
+        android:text="@string/set_shortcut"
+        android:textSize="18.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5.0dip" >
+
+        <ImageView
+            android:id="@id/shortcut_color_ring"
+            android:layout_width="170.0dip"
+            android:layout_height="170.0dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ring" />
+
+        <ImageView
+            android:id="@id/shortcut_left"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/shortcut_color_ring" />
+
+        <ImageView
+            android:id="@id/shortcut_top"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_above="@id/shortcut_color_ring"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@id/shortcut_right"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/shortcut_color_ring" />
+
+        <ImageView
+            android:id="@id/shortcut_bottom"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_below="@id/shortcut_color_ring"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
