@@ -12,6 +12,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Handler;
+import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -35,6 +37,20 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private float mDefalutScale = 2.0f;
     private float mCurrentScale = mDefalutScale;
     private ValueAnimator mLightScaleAnim;
+    private MyViewMagnifier mMagnifier;
+
+    private final static int MESSAGE_HIDE_MAGNIFIER = 1;
+    private Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case MESSAGE_HIDE_MAGNIFIER:
+                    hideMagnifier();
+                    break;
+            }
+        }
+    };
 
     public HuaWeiLockScreen(Context context) {
         this(context, null);
@@ -52,24 +68,47 @@ public class HuaWeiLockScreen extends RelativeLayout {
         float y = event.getRawY();
         int mMoveX = (int) (x - mDownX);
         int mMoveY = (int) (y - mDownY);
+        Rect localRect1 = new Rect();
+        Rect localRect2 = new Rect();
+        getGlobalVisibleRect(localRect1);
+        Log.i("huanghua", "localRect1:" + localRect1);
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 mDownX = x;
                 mDownY = y;
                 mCurrentScale = mDefalutScale;
-                cancelAnimator(mLightScaleAnim);
-                flareShow(mDownX, mDownY);
-                mLight.setAlpha(0.8f);
-                mLight.setScaleX(mCurrentScale);
-                mLight.setScaleY(mCurrentScale);
-                mLight.setVisibility(View.VISIBLE);
+                /*
+                 * cancelAnimator(mLightScaleAnim);
+                 * flareShow(mDownX, mDownY);
+                 * mLight.setAlpha(0.8f);
+                 * mLight.setScaleX(mCurrentScale);
+                 * mLight.setScaleY(mCurrentScale);
+                 * mLight.setVisibility(View.VISIBLE);
+                 */
+
+                if (isMagnifierShowing()) {
+                    moveMagnifier(Math.round(event.getX()), Math.round(event.getY()),
+                            Math.round(event.getX()),
+                            Math.round(event.getY()));
+                } else {
+                    showMagnifier(Math.round(event.getX()), Math.round(event.getY()),
+                            Math.round(event.getX()),
+                            Math.round(event.getY()), true);
+                }
+
                 break;
             case MotionEvent.ACTION_MOVE:
-                hoverMove(x, y);
+                moveMagnifier(Math.round(event.getX()), Math.round(event.getY()),
+                        Math.round(event.getX()),
+                        Math.round(event.getY()));
+                // hoverMove(x, y);
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
-                doLightScaleAnim(mCurrentScale);
+                if (isMagnifierShowing()) {
+                    mHandler.sendEmptyMessageDelayed(MESSAGE_HIDE_MAGNIFIER, 100);
+                }
+                // doLightScaleAnim(mCurrentScale);
                 break;
         }
         return true;
@@ -128,9 +167,9 @@ public class HuaWeiLockScreen extends RelativeLayout {
             float mCurrentY) {
         float lenght = (float) Math.hypot(Math.abs(mStartX - mCurrentX),
                 Math.abs(mStartY - mCurrentY));
-        //mCurrentScale = lenght;
-        //mLight.setScaleX(lenght);
-        //mLight.setScaleY(lenght);
+        // mCurrentScale = lenght;
+        // mLight.setScaleX(lenght);
+        // mLight.setScaleY(lenght);
     }
 
     private void setCenterPos(View view, float mStartX, float mStartY, float mCurrentX,
@@ -180,5 +219,44 @@ public class HuaWeiLockScreen extends RelativeLayout {
             }
             mRect = new Rect(0, 0, mBitmap.getWidth(), mBitmap.getHeight());
         }
+    }
+
+    private boolean isMagnifierShowing() {
+        if (mMagnifier != null) {
+            return mMagnifier.isShowing();
+        }
+        return false;
+    }
+
+    private void moveMagnifier(int curX, int curY, int realX, int realY) {
+        int[] location = new int[2];
+        this.getLocationOnScreen(location);
+        int lx = location[0];
+        int ly = location[1];
+        getMagnifier().move(curX + lx, realY + ly, realX + lx, realY + ly);
+    }
+
+    private void hideMagnifier() {
+        if (mMagnifier != null) {
+            mMagnifier.hide();
+        }
+    }
+
+    private void showMagnifier(int curX, int curY, int realX, int realY, boolean animated) {
+        int[] location = new int[2];
+        this.getLocationOnScreen(location);
+        int lx = location[0];
+        int ly = location[1];
+        getMagnifier().show(curX + lx, realY + ly, realX + lx, realY + ly, animated);
+        this.getParent().requestDisallowInterceptTouchEvent(true);
+    }
+
+    private synchronized MyViewMagnifier getMagnifier() {
+        if (mMagnifier == null) {
+            // FrameLayout host = (FrameLayout) findViewById(R.id.bottomView);
+            FrameLayout host = new FrameLayout(mContext);
+            mMagnifier = new MyViewMagnifier(host);
+        }
+        return mMagnifier;
     }
 }

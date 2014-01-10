@@ -3,17 +3,22 @@ package com.mephone.hellohwlockscreen;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.EmbossMaskFilter;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
 import android.graphics.PixelFormat;
 import android.graphics.RectF;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
+
+import java.util.Formatter.BigDecimalLayoutForm;
 
 /**
  * The helper class which makes views support magnifier easily.
@@ -51,8 +56,8 @@ public class ViewMagnifier {
         int displayWidth = mWindowManager.getDefaultDisplay().getWidth();
         int displayHeight = mWindowManager.getDefaultDisplay().getHeight();
         int x = Math.min(displayWidth, displayHeight);
-        this.mWidth = Math.round(x * 0.4f);
-        this.mHeight = mWidth;
+        this.mWidth = x;
+        this.mHeight = x;
         this.mMagnifierView = new MagnifierView(mContext);
     }
 
@@ -187,25 +192,29 @@ public class ViewMagnifier {
     }
 
     protected void showInternal(boolean animate) {
-        // set parameters containing position and size.
-        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-        lp.token = mHostView.getWindowToken();
-        lp.x = mPositionX;
-        lp.y = mPositionY;
-        lp.width = mWidth;
-        lp.height = mHeight;
-        lp.gravity = Gravity.LEFT | Gravity.TOP;
-        lp.format = PixelFormat.TRANSLUCENT;
-        lp.type = WindowManager.LayoutParams.TYPE_TOAST;
-        lp.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |
-                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN |
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
-        lp.packageName = mContext.getPackageName();
-        if (animate) {
-            //lp.windowAnimations = com.android.internal.R.style.zzz_text_magnifier_popup;
+        if (mLayoutParams == null) {
+
+            WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+            lp.token = mHostView.getWindowToken();
+            // lp.x = mPositionX;
+            // lp.y = mPositionY;
+            lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+            lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+            lp.gravity = Gravity.LEFT | Gravity.TOP;
+            lp.format = PixelFormat.TRANSLUCENT;
+            lp.type = WindowManager.LayoutParams.TYPE_TOAST;
+            lp.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |
+                    WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN |
+                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
+            lp.packageName = mContext.getPackageName();
+            if (animate) {
+                lp.windowAnimations = R.style.zzz_text_magnifier_popup;
+            }
+            mLayoutParams = lp;
         }
-        mLayoutParams = lp;
-        mWindowManager.addView(mMagnifierView, lp);
+        mLayoutParams.x = mPositionX;
+        mLayoutParams.y = mPositionY;
+        mWindowManager.addView(mMagnifierView, mLayoutParams);
         // set showing flag
         mShowing = true;
     }
@@ -222,22 +231,21 @@ public class ViewMagnifier {
 
     protected void calculatePosition(int screenX, int screenY) {
         mPositionX = screenX - mWidth / 2;
-        mPositionY = screenY - mHeight - TOLERANCE_TOUCH;
+        mPositionY = screenY - mHeight / 2;// - TOLERANCE_TOUCH;
         mPositionY = Math.max(mPositionY, -mHeight / 3);
     }
 
     protected void calculateDrawingPosition(int screenX, int screenY) {
         int[] location = new int[2];
         mHostView.getRootView().getLocationOnScreen(location);
-        mDrawingX = screenX - location[0] - mWidth / 2f;
-        mDrawingY = screenY - location[1] - mHeight / 2f;
+        mDrawingX = screenX - location[0] - mWidth / mScale / 2f;
+        mDrawingY = screenY - location[1] - mHeight / mScale / 2f;
     }
 
     protected class MagnifierView extends View {
         private static final int BORDER_WIDTH = 4;
 
         private Bitmap mMagnifierBitmap;
-        private Paint mOutlinePaint = new Paint();
         private RectF mOutlineRect = null;
         private Path mClipPath = new Path();
 
@@ -255,35 +263,33 @@ public class ViewMagnifier {
         }
 
         private void init() {
-            Drawable drawable = mContext.getResources().getDrawable(R.drawable.zzz_text_magnifier);
+            Drawable drawable = mContext.getResources().getDrawable(R.raw.light);
             mMagnifierBitmap = Bitmap.createBitmap(mWidth, mHeight, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(mMagnifierBitmap);
             drawable.setBounds(0, 0, mWidth, mHeight);
             drawable.draw(canvas);
 
-            mOutlinePaint.setAntiAlias(true);
-            mOutlinePaint.setColor(Color.DKGRAY);
-            mOutlinePaint.setStrokeWidth(BORDER_WIDTH);
-            mOutlinePaint.setStyle(Style.STROKE);
-            mOutlineRect = new RectF(BORDER_WIDTH / 2, BORDER_WIDTH / 2, mWidth - BORDER_WIDTH,
-                    mHeight - BORDER_WIDTH);
-            mClipPath.addOval(mOutlineRect, Path.Direction.CW);
-
             mBitmapWidth = Math.round(mWidth / mScale);
             mBitmapHeight = Math.round(mHeight / mScale);
+            int ws = (mWidth - mBitmapWidth) / 2;
+            int hs = (mHeight - mBitmapHeight) / 2;
+            mOutlineRect = new RectF(ws, hs, ws + mBitmapWidth, hs + mBitmapHeight);
+            mClipPath.addOval(mOutlineRect, Path.Direction.CW);
+
             mBitmap = Bitmap.createBitmap(mBitmapWidth, mBitmapHeight, Bitmap.Config.ARGB_8888);
             mBitmapCanvas = new Canvas(mBitmap);
             mBitmapPaint = new Paint();
             mBitmapPaint.setAntiAlias(true);
             mBitmapPaint.setDither(true);
             mBitmapPaint.setFilterBitmap(true);
-            mBitmapPaint.setColor(Color.BLACK);
+            mBitmapPaint.setColor(Color.TRANSPARENT);
             mBitmapPaint.setStyle(Style.FILL);
 
             mPaint = new Paint();
             mPaint.setAntiAlias(true);
             mPaint.setDither(true);
             mPaint.setFilterBitmap(true);
+
         }
 
         protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -296,13 +302,19 @@ public class ViewMagnifier {
             mBitmapCanvas.drawRect(new RectF(0, 0, mBitmapWidth, mBitmapHeight), mBitmapPaint);
             mBitmapCanvas.save();
             mBitmapCanvas.translate(-mDrawingX, -mDrawingY);
-            mHostView.getRootView().draw(mBitmapCanvas);
+            // mHostView.getRootView().draw(mBitmapCanvas);
+            Drawable drawable = mContext.getResources().getDrawable(R.drawable.device_temp);
+            Bitmap tempBit = ((BitmapDrawable) drawable).getBitmap();
+            mBitmapCanvas.drawBitmap(tempBit, 0, 0, null);
             mBitmapCanvas.restore();
 
             canvas.save();
             canvas.clipPath(mClipPath);
             canvas.scale(mScale, mScale);
-            canvas.drawBitmap(mBitmap, 0, 0, mPaint);
+            canvas.drawBitmap(mBitmap,
+                    0,
+                    0,
+                    mPaint);
             canvas.restore();
 
             canvas.drawBitmap(mMagnifierBitmap, 0, 0, null);

@@ -6,6 +6,14 @@
     android:background="@drawable/simple_background_unlock"
     android:gravity="center" >
 
+    <FrameLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/device_temp"
+        android:visibility="invisible" >
+    </FrameLayout>
+
     <ImageView
         android:id="@id/leftApp"
         android:layout_width="wrap_content"

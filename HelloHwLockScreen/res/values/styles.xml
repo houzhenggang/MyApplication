@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="text_shadow_style">
         <item name="android:shadowColor">#99000000</item>
         <item name="android:shadowDx">0.0</item>
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">3.0</item>
     </style>
+
+    <style name="zzz_text_magnifier_popup">
+        <item name="android:windowEnterAnimation">@anim/zzz_text_magnifier_popup_show</item>
+        <item name="android:windowExitAnimation">@anim/zzz_text_magnifier_popup_hide</item>
+    </style>
+
 </resources>
