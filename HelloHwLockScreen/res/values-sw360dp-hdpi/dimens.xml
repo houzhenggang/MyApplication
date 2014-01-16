@@ -8,12 +8,12 @@
     <dimen name="chargingstatus_margin_top">5.0dip</dimen>
     <dimen name="ownerinfo_margin_top">5.0dip</dimen>
     <dimen name="slide_eventview_margin_top">20.0dip</dimen>
-    <dimen name="slide_unlocktip_margin_bottom">30.0dip</dimen>
-    <dimen name="unlocktip_textsize">18.0dip</dimen>
+    <dimen name="slide_unlocktip_margin_bottom">17.0dip</dimen>
+    <dimen name="unlocktip_textsize">17.0dip</dimen>
     <dimen name="slide_event_view_margin_top">40.0dip</dimen>
     <dimen name="slide_num_padding_top">3.0dip</dimen>
     <dimen name="slide_num_textsize">17.0dip</dimen>
-    <dimen name="slide_event_margin">10.0dip</dimen>
+    <dimen name="slide_event_margin">8.0dip</dimen>
     <dimen name="slide_event_image_margin_top">6.0dip</dimen>
     <dimen name="slide_event_num_margin_top">-3.0dip</dimen>
     <dimen name="slide_unlock_distance">0.5px</dimen>

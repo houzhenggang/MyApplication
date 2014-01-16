@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mephone.hellohwlockscreen.ClockView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clock_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginBottom="-18dip"
+    android:layout_marginTop="-25dip" >
+
+    <TextView
+        android:id="@+id/clock_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dip"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffffff"
+        android:textSize="90sp" />
+
+    <TextView
+        android:id="@+id/am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/clock_text"
+        android:layout_marginLeft="8dip"
+        android:layout_toRightOf="@id/clock_text"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</com.mephone.hellohwlockscreen.ClockView>

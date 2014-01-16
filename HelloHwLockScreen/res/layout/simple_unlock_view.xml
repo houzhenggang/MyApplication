@@ -1,10 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.mephone.hellohwlockscreen.HuaWeiLockScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@id/simple_unlock_view"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/simple_background_unlock"
-    android:gravity="center" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unlock_wallpaper_1" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="65dip"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/operators1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/lockscreen_missing_card1_message_short"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/chargingstatus_textsize" />
+
+        <TextView
+            android:id="@+id/operators2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/lockscreen_missing_card2_message_short"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/chargingstatus_textsize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <include layout="@layout/time_clock" />
+
+            <com.mephone.hellohwlockscreen.DateView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:ellipsize="none"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/chargingstatus_textsize" >
+            </com.mephone.hellohwlockscreen.DateView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chargingstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/lockscreen_low_battery"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/chargingstatus_textsize" />
+
+        <TextView
+            android:id="@+id/ownerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/ownerinfo_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sldie_event_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_view"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="8dip" >
+
+        <include layout="@layout/slide_event_notify_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/locktip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/slide_unlocktip_margin_bottom"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/slide_to_unlock"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/unlocktip_textsize" />
+
+    <ImageButton
+        android:id="@+id/open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/lock_background" />
 
     <FrameLayout
         android:id="@+id/bottomView"
@@ -12,46 +119,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/device_temp"
         android:visibility="invisible" >
-    </FrameLayout>
-
-    <ImageView
-        android:id="@id/leftApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/simple_app_margin"
-        android:src="@drawable/simple_ic_camera" />
-
-    <ImageView
-        android:id="@id/rightApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/simple_app_margin"
-        android:src="@drawable/simple_ic_lock" />
-
-    <ImageView
-        android:id="@id/unlockKey"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/simple_ic_unlock" />
-
-    <FrameLayout
-        android:id="@+id/flareframelayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/transparent" >
-
-        <ImageView
-            android:id="@+id/light"
-            android:layout_width="200dip"
-            android:layout_height="200dip"
-            android:layout_gravity="center"
-            android:src="@raw/light"
-            android:visibility="invisible" />
     </FrameLayout>
 
 </com.mephone.hellohwlockscreen.HuaWeiLockScreen>

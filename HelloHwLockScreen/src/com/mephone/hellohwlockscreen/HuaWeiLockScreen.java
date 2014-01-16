@@ -15,10 +15,10 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -26,6 +26,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
 
     private FrameLayout mFlareFrameLayout;
     private ImageView mLight;
+    private ImageButton mOpenCamera;
     private Context mContext;
     private float mDownX;
     private float mDownY;
@@ -34,8 +35,6 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private float hoverX;
     private float hoverY;
 
-    private float mDefalutScale = 2.0f;
-    private float mCurrentScale = mDefalutScale;
     private ValueAnimator mLightScaleAnim;
     private MyViewMagnifier mMagnifier;
 
@@ -68,47 +67,26 @@ public class HuaWeiLockScreen extends RelativeLayout {
         float y = event.getRawY();
         int mMoveX = (int) (x - mDownX);
         int mMoveY = (int) (y - mDownY);
-        Rect localRect1 = new Rect();
-        Rect localRect2 = new Rect();
-        getGlobalVisibleRect(localRect1);
-        Log.i("huanghua", "localRect1:" + localRect1);
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 mDownX = x;
                 mDownY = y;
-                mCurrentScale = mDefalutScale;
-                /*
-                 * cancelAnimator(mLightScaleAnim);
-                 * flareShow(mDownX, mDownY);
-                 * mLight.setAlpha(0.8f);
-                 * mLight.setScaleX(mCurrentScale);
-                 * mLight.setScaleY(mCurrentScale);
-                 * mLight.setVisibility(View.VISIBLE);
-                 */
-
                 if (isMagnifierShowing()) {
-                    moveMagnifier(Math.round(event.getX()), Math.round(event.getY()),
-                            Math.round(event.getX()),
-                            Math.round(event.getY()));
+                    moveMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y));
                 } else {
-                    showMagnifier(Math.round(event.getX()), Math.round(event.getY()),
-                            Math.round(event.getX()),
-                            Math.round(event.getY()), true);
+                    showMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y), true);
                 }
-
                 break;
             case MotionEvent.ACTION_MOVE:
-                moveMagnifier(Math.round(event.getX()), Math.round(event.getY()),
-                        Math.round(event.getX()),
-                        Math.round(event.getY()));
-                // hoverMove(x, y);
+                getMagnifier().calculateMoveLenght(mMoveX, mMoveY);
+                moveMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y));
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
+                getMagnifier().calculateMoveLenght(0, 0);
                 if (isMagnifierShowing()) {
                     mHandler.sendEmptyMessageDelayed(MESSAGE_HIDE_MAGNIFIER, 100);
                 }
-                // doLightScaleAnim(mCurrentScale);
                 break;
         }
         return true;
@@ -146,8 +124,8 @@ public class HuaWeiLockScreen extends RelativeLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        mFlareFrameLayout = (FrameLayout) findViewById(R.id.flareframelayout);
-        mLight = (ImageView) findViewById(R.id.light);
+        mOpenCamera = (ImageButton) findViewById(R.id.open_camera);
+        mOpenCamera.setOnTouchListener(mOpenCameraListener);
     }
 
     public void flareShow(float x, float y) {
@@ -259,4 +237,32 @@ public class HuaWeiLockScreen extends RelativeLayout {
         }
         return mMagnifier;
     }
+
+    private float mOpenCameraY = 0;
+    private OnTouchListener mOpenCameraListener = new OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            int action = event.getAction();
+            float x = event.getRawX();
+            float y = event.getRawY();
+            switch (action) {
+                case MotionEvent.ACTION_DOWN:
+                    mOpenCameraY = mOpenCamera.getY();
+                    getMagnifier().showBottomView(false);
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    float btnX = mOpenCamera.getX();
+                    if (y < mOpenCameraY && x >= btnX && x <= (btnX + mOpenCamera.getWidth())) {
+                        mOpenCamera.setY(y);
+                    }
+                    break;
+                case MotionEvent.ACTION_CANCEL:
+                case MotionEvent.ACTION_UP:
+                    getMagnifier().showBottomView(true);
+                    mOpenCamera.setY(mOpenCameraY);
+            }
+            onTouchEvent(event);
+            return true;
+        }
+    };
 }
