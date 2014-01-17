@@ -52,7 +52,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private ValueAnimator mLightScaleAnim;
     private MyViewMagnifier mMagnifier;
 
-    private final int HEXAGON_TOTAL = 5;
+    private final int HEXAGON_TOTAL = 8;
     private FrameLayout mFlareFrameLayout;
     private FrameLayout lightObj;
     private ImageViewBlended mFlareRainbow0;
@@ -280,12 +280,26 @@ public class HuaWeiLockScreen extends RelativeLayout {
         for (int i = 0; i < HEXAGON_TOTAL; i++) {
             float f1 = 0.3f + 0.5f * (float) Math.random();
             setAlphaAndVisibility(mFlarePentagonNear[i], f1);
-            float f2 = 0.4f * ((float) Math.random() - 0.5f);
-            hexagonDistanceNear[i] = (float) (f2 + (0.2f + 0.24f * i));
+            float f2 = 0.4f *  ((float) Math.random() - 0.5f);
+            hexagonDistanceNear[i] = 0.4f * (i+1) / 3;//(float) (f2 + (0.2f + 0.24f * i));
         }
         float[] shuffle = getShuffleArray(hexagonDistanceNear);
+
+        int radius = mDiagonal / 2;
+        float lenght = (float) Math.sqrt(mYDelay * mYDelay + mXDelay * mXDelay);
         for (int i = 0; i < HEXAGON_TOTAL; i++) {
-            hexagonScaleNear[i] = (-0.2f + shuffle[i]);
+            float scale = (i + 1) / 3 * 0.1f;
+            if (i > HEXAGON_TOTAL / 2) {
+                scale = (HEXAGON_TOTAL - i + 1) / 3 * 0.1f;
+            } else if (i == HEXAGON_TOTAL / 2) {
+                scale = 0.4f;
+            }
+            if (lenght >= 0 && lenght < radius / 2) {
+                hexagonScaleNear[i] = 0.6f;
+            } else {
+                hexagonScaleNear[i] = 0.6f - (0.6f / radius / 2) * lenght;
+            }
+            hexagonScaleNear[i] = hexagonScaleNear[i] + scale;
             setCenterPos(mFlarePentagonNear[i], showStartX, showStartY, currentX, currentY,
                     hexagonDistanceNear[i], hexagonScaleNear[i], 0);
         }
@@ -294,11 +308,22 @@ public class HuaWeiLockScreen extends RelativeLayout {
             float f1 = 0.3f + 0.5f * (float) Math.random();
             setAlphaAndVisibility(mFlarePentagonFar[i], f1);
             float f2 = 0.4f * ((float) Math.random() - 0.5f);
-            hexagonDistanceFar[i] = (float) (f2 + (0.2f + 0.24f * i));
+            hexagonDistanceFar[i] = 0.4f * (i+1) / 3;//(float) (f2 + (0.2f + 0.24f * i));
         }
         shuffle = getShuffleArray(hexagonDistanceFar);
         for (int i = 0; i < HEXAGON_TOTAL; i++) {
-            hexagonScaleFar[i] = (-0.2f + shuffle[i]);
+            float scale = (i + 1) / 3 * 0.1f;
+            if (i > HEXAGON_TOTAL / 2) {
+                scale = (HEXAGON_TOTAL - i + 1) / 3 * 0.1f;
+            } else if (i == HEXAGON_TOTAL / 2) {
+                scale = 0.4f;
+            }
+            if (lenght >= 0 && lenght < radius / 2) {
+                hexagonScaleFar[i] = 0.6f;
+            } else {
+                hexagonScaleFar[i] = 0.6f - (0.6f / radius / 2) * lenght;
+            }
+            hexagonScaleFar[i] = hexagonScaleFar[i] + scale;
             setCenterPos(mFlarePentagonFar[i], showStartX, showStartY, mRelativelyX, mRelativelyY,
                     hexagonDistanceFar[i], hexagonScaleFar[i], 0);
         }
@@ -325,13 +350,41 @@ public class HuaWeiLockScreen extends RelativeLayout {
         hoverX = x;
         hoverY = y;
         calculateDistance(hoverX, hoverY);
+
+        int radius = mDiagonal / 2;
+        float lenght = (float) Math.sqrt(mYDelay * mYDelay + mXDelay * mXDelay);
+
         for (int i = 0; i < HEXAGON_TOTAL; i++) {
+            float scale = (i + 1) / 3 * 0.1f;
+            if (i > HEXAGON_TOTAL / 2) {
+                scale = (HEXAGON_TOTAL - i + 1) / 3 * 0.1f;
+            } else if (i == HEXAGON_TOTAL / 2) {
+                scale = 0.4f;
+            }
+            if (lenght >= 0 && lenght < radius / 2) {
+                hexagonScaleNear[i] = 0.6f;
+            } else {
+                hexagonScaleNear[i] = 0.6f - (0.6f / radius / 2) * lenght;
+            }
+            hexagonScaleNear[i] = hexagonScaleNear[i] + scale;
             setCenterPos(mFlarePentagonNear[i], showStartX, showStartY, hoverX, hoverY,
-                    hexagonDistanceNear[i], 1000f, 0);
+                    hexagonDistanceNear[i], hexagonScaleNear[i], 0);
         }
         for (int i = 0; i < HEXAGON_TOTAL; i++) {
+            float scale = (i + 1) / 3 * 0.1f;
+            if (i > HEXAGON_TOTAL / 2) {
+                scale = (HEXAGON_TOTAL - i + 1) / 3 * 0.1f;
+            } else if (i == HEXAGON_TOTAL / 2) {
+                scale = 0.4f;
+            }
+            if (lenght >= 0 && lenght < radius / 2) {
+                hexagonScaleFar[i] = 0.6f;
+            } else {
+                hexagonScaleFar[i] = 0.6f - (0.6f / radius / 2) * lenght;
+            }
+            hexagonScaleFar[i] = hexagonScaleFar[i] + scale;
             setCenterPos(mFlarePentagonFar[i], showStartX, showStartY, mRelativelyX, mRelativelyY,
-                    hexagonDistanceFar[i], 1000f, 0);
+                    hexagonDistanceFar[i], hexagonScaleFar[i], 0);
         }
         setRainBowMove();
     }
@@ -343,7 +396,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
         setAlphaAndVisibility(mFlareRainbow1, alpha);
         setAlphaAndVisibility(mFlareRainbow2, alpha);
         setAlphaAndVisibility(mFlareRainbow3, alpha);
-        
+
         float xDelay = mRelativelyX - showStartX;
         float yDelay = mRelativelyY - showStartY;
         float angle = 180f;
@@ -377,7 +430,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private void setCenterPos(View view, float mStartX, float mStartY, float mCurrentX,
             float mCurrentY, float mDistanceValue, float mScaleValue, int mRotateAngle) {
         if (mScaleValue != 1000f) {
-            float distance = (float) (100.0f * Math.random());
+            float distance = 90.f;
             float f1 = 0.5f + 0.5f * ((float) distance / 720.0f);
             float f2 = (0.5f + 0.5f * 1) * (mScaleValue * f1);
             view.setScaleX(f2);
