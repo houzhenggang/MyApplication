@@ -109,16 +109,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="15dip"
         android:layout_marginBottom="5dip"
+        android:layout_marginRight="15dip"
         android:background="@drawable/lock_background" />
 
     <FrameLayout
-        android:id="@+id/bottomView"
+        android:id="@+id/flareframelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/device_temp"
-        android:visibility="invisible" >
+        android:background="@android:color/transparent" >
     </FrameLayout>
 
 </com.mephone.hellohwlockscreen.HuaWeiLockScreen>

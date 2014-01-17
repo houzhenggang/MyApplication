@@ -247,10 +247,11 @@ public class ViewMagnifier {
         mDrawingY = screenY - location[1] - mHeight / mScale / 2f;
     }
 
-    public void calculateMoveLenght(int x, int y) {
+    public int calculateMoveLenght(int x, int y) {
         this.mMoveX = x;
         this.mMoveY = y;
         this.mMoveLenght = (int) Math.abs(Math.sqrt(x * x + y * y));
+        return this.mMoveLenght;
     }
 
     public void showBottomView(boolean show) {
