@@ -254,6 +254,10 @@ public class ViewMagnifier {
         return this.mMoveLenght;
     }
 
+    public int getMoveLenght() {
+        return this.mMoveLenght;
+    }
+
     public void showBottomView(boolean show) {
         mShowBottomView = show;
     }
@@ -328,9 +332,21 @@ public class ViewMagnifier {
         for (int j = -range; j <= range; j++) {
             int y1 = y + j;
             if (y1 >= 0 && y1 < height) { // 越界判断
-                for (int i = -range; i <= range; i++) {
+                for (int i = -range; i <= 0; i++) {
                     int x1 = x + i;
                     int x2 = y1 * width + x1;
+                    if (x1 >= 0 && x1 < width) { // 越界判断
+                        int sqrt = (int) Math.sqrt(i * i + j * j);
+                        if (sqrt < range) {
+                            int alpha = (range - Math.abs(sqrt)) * 250 / range;
+                            if (alpha > 210) {
+                                alpha = 210;
+                            }
+                            argb[x2] = (alpha << 24) | (argb[x2] & 0x00FFFFFF);
+                        }
+                    }
+                    x1 = x - i;
+                    x2 = y1 * width + x1;
                     if (x1 >= 0 && x1 < width) { // 越界判断
                         int sqrt = (int) Math.sqrt(i * i + j * j);
                         if (sqrt < range) {
