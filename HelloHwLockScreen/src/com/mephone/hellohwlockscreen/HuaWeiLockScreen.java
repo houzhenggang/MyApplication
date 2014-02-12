@@ -81,6 +81,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private ValueAnimator mTipAnimator1;
     private ValueAnimator mTipAnimator2;
     private ValueAnimator mTipAnimator3;
+    private View mTopView;
 
     private final static int MESSAGE_HIDE_MAGNIFIER = 1;
     private final static int MESSAGE_START_TIP_FLASH = 2;
@@ -153,8 +154,8 @@ public class HuaWeiLockScreen extends RelativeLayout {
                 break;
             case MotionEvent.ACTION_MOVE:
                 int lenght = getMagnifier().calculateMoveLenght(mMoveX, mMoveY);
-                if (lenght > LOCK_MAX_LENGHT) {
-                    // System.exit(0);
+                if (lenght > LOCK_MAX_LENGHT && mShowBottomView) {
+                    //System.exit(0);
                 }
                 moveMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y));
                 break;
@@ -300,6 +301,8 @@ public class HuaWeiLockScreen extends RelativeLayout {
         super.onFinishInflate();
         mOpenCamera = (ImageButton) findViewById(R.id.open_camera);
         mOpenCamera.setOnTouchListener(mOpenCameraListener);
+        mTopView = findViewById(R.id.top_view);
+        mTopView.setOnTouchListener(mNotUnLockTouchListener);
         mFlareFrameLayout = (FrameLayout) findViewById(R.id.flareframelayout);
         lightObj = new FrameLayout(mContext);
         mFlareFrameLayout.addView(lightObj);
@@ -791,6 +794,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
     }
 
     private float mOpenCameraY = 0;
+    private boolean mShowBottomView = true;
     private OnTouchListener mOpenCameraListener = new OnTouchListener() {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
@@ -805,6 +809,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
                     mDownY = y;
                     flareShow(mDownX, mDownY);
                     mOpenCameraY = mOpenCamera.getY();
+                    mShowBottomView = false;
                     getMagnifier().showBottomView(false);
                     vibrate(100);
                     break;
@@ -817,6 +822,7 @@ public class HuaWeiLockScreen extends RelativeLayout {
                 case MotionEvent.ACTION_CANCEL:
                 case MotionEvent.ACTION_UP:
                     showFlashTip();
+                    mShowBottomView = true;
                     getMagnifier().showBottomView(true);
                     flareHide();
                     mOpenCamera.setY(mOpenCameraY);
@@ -832,6 +838,24 @@ public class HuaWeiLockScreen extends RelativeLayout {
         }
     };
 
+    private OnTouchListener mNotUnLockTouchListener = new OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            int action = event.getAction();
+            switch (action) {
+                case MotionEvent.ACTION_DOWN:
+                    mShowBottomView = false;
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    break;
+                case MotionEvent.ACTION_CANCEL:
+                case MotionEvent.ACTION_UP:
+                    mShowBottomView = true;
+            }
+            onTouchEvent(event);
+            return true;
+        }
+    };
     private void openCamera() {
         Intent intent = new Intent(Intent.ACTION_MAIN, null);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

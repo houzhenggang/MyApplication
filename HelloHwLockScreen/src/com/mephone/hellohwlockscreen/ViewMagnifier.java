@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.PixelFormat;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.Gravity;
@@ -284,6 +285,7 @@ public class ViewMagnifier {
             // drawable.draw(canvas);
             mAlphaBitmap = BitmapFactory.decodeResource(mContext.getResources(),
                     R.drawable.device_temp);
+            //mAlphaBitmap = ((BitmapDrawable) mHostView.getBackground()).getBitmap();
             int oldWidth = mAlphaBitmap.getWidth();
             int oldHeight = mAlphaBitmap.getHeight();
             mAlphaBitmap = zoomBitmap(mAlphaBitmap, mScale);
@@ -313,10 +315,83 @@ public class ViewMagnifier {
                     mScreenY - tempBitmap.getHeight() / 2,
                     null);
             if (mShowBottomView) {
-                canvas.drawBitmap(setBitmapAlpha(mAlphaBitmap, (int) (mScreenX * mScale),
-                        (int) (mScreenY * mScale)), -mOffsetX, -mOffsetY, null);
+                Bitmap cropBitmap = cropImage(mAlphaBitmap, mRadius, (int) (mScreenX * mScale),
+                        (int) (mScreenY * mScale));
+                //canvas.drawBitmap(setBitmapAlpha(cropBitmap, (int) (mScreenX * mScale),
+                //        (int) (mScreenY * mScale)), -mOffsetX, -mOffsetY, null);
+                int cropWight = cropBitmap.getWidth();
+                int cropHeight = cropBitmap.getHeight(); 
+                int cropOffsetX = mScreenX - cropWight / 2;
+                int cropOffsetY = mScreenY - cropHeight / 2;
+                
+                int cropCenterX = cropWight / 2;
+                int cropCenterY = cropHeight / 2;
+                
+                int retX = mScreenX - mRadius;
+                int retY = mScreenY - mRadius;
+                int retX2 = mScreenX + mRadius;
+                int retY2 = mScreenY + mRadius;
+                if (retX < 0) {
+                    cropOffsetX = 0;
+                    cropCenterX += retX;
+                }
+                if (retY < 0) {
+                    cropOffsetY = 0;
+                    cropCenterY += retY;
+                }
+                if (retY2 > mAlphaBitmap.getHeight()) {
+                    cropCenterY += retY2 - mAlphaBitmap.getHeight();
+                    cropOffsetY = mScreenY - mRadius;
+                }
+                if (retX2 > mAlphaBitmap.getWidth()) {
+                    cropCenterX += retX2 - mAlphaBitmap.getWidth();
+                    cropOffsetX = mScreenX - mRadius;
+                }
+                
+                if (cropWight >= mAlphaBitmap.getWidth()) {
+                    cropOffsetX = 0;
+                }
+                if (cropHeight >= mAlphaBitmap.getHeight()) {
+                    cropOffsetY = 0;
+                }
+                Log.i("huanghua", "cropOffsetX:" + cropOffsetX + " cropOffsetY:" + cropOffsetY + " cropCenterY:" + cropCenterY);
+                canvas.drawBitmap(setBitmapAlpha(cropBitmap, cropCenterX, cropCenterY), cropOffsetX, cropOffsetY, null);
             }
         }
+    }
+
+    private Bitmap cropImage(Bitmap bitmap, int range, int x, int y) {
+        int w = bitmap.getWidth();
+        int h = bitmap.getHeight();
+
+        int nw = range * 2;
+        int nh = range * 2;
+
+        int retX = x - range;
+        int retY = y - range;
+        int retX2 = x + range;
+        int retY2 = y + range;
+        if (retX < 0) {
+            retX = 0;
+            nw = nw + retX;
+        }
+        if (retY < 0) {
+            retY = 0;
+            nh = nh + retY;
+        }
+        if (retY2 > h) {
+            nh = nh - retY2 + h;
+        }
+        if (retX2 > w) {
+            nw = nw - retX2 + w;
+        }
+        if (nw > w) {
+            nw = w;
+        }
+        if (nh > h) {
+            nh = h;
+        }
+        return Bitmap.createBitmap(bitmap, retX, retY, nw, nh, null, false);
     }
 
     public Bitmap setBitmapAlpha(Bitmap sourceImg, int x, int y) {
