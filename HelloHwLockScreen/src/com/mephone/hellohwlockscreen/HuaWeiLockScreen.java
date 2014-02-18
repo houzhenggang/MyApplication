@@ -786,8 +786,9 @@ public class HuaWeiLockScreen extends RelativeLayout {
 
     private synchronized MyViewMagnifier getMagnifier() {
         if (mMagnifier == null) {
-            // FrameLayout host = (FrameLayout) findViewById(R.id.bottomView);
+            //FrameLayout host = (FrameLayout) findViewById(R.id.bottomView);
             FrameLayout host = new FrameLayout(mContext);
+            host.setBackgroundResource(R.drawable.device_temp);
             mMagnifier = new MyViewMagnifier(host);
         }
         return mMagnifier;

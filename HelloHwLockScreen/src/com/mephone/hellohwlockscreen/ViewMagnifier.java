@@ -3,17 +3,17 @@ package com.mephone.hellohwlockscreen;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.Bitmap.Config;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 
 /**
  * The helper class which makes views support magnifier easily.
@@ -31,10 +31,10 @@ public class ViewMagnifier {
 
     protected int mWidth;
     protected int mHeight;
-    protected float mScale = 1.0f;
+    protected float mScale = 1.2f;
     protected int mRadius = MIN_RADIUS;
     private int mMaxMoveLenght = 0;
-    private static final int MAX_RADIUS = 650;
+    private static final int MAX_RADIUS = 400;
     private static final int MIN_RADIUS = 40;
     private static final float MAX_SCALE = 5.0f;
     private static final float MIN_SCALE = 1.0f;
@@ -267,6 +267,7 @@ public class ViewMagnifier {
 
         private Bitmap mMagnifierBitmap;
         private Bitmap mAlphaBitmap;
+        private int[] mAlphaARG;
         private int mOffsetX;
         private int mOffsetY;
 
@@ -276,21 +277,33 @@ public class ViewMagnifier {
         }
 
         private void init() {
-            // Drawable drawable =
-            // mContext.getResources().getDrawable(R.raw.light);
             mMagnifierBitmap = BitmapFactory.decodeResource(mContext.getResources(),
                     R.raw.light);
-            // Canvas canvas = new Canvas(mMagnifierBitmap);
-            // drawable.setBounds(0, 0, mWidth, mHeight);
-            // drawable.draw(canvas);
-            mAlphaBitmap = BitmapFactory.decodeResource(mContext.getResources(),
-                    R.drawable.device_temp);
-            //mAlphaBitmap = ((BitmapDrawable) mHostView.getBackground()).getBitmap();
+            mAlphaBitmap = ((BitmapDrawable) mHostView.getBackground()).getBitmap();
+            mAlphaBitmap = compressImage(mAlphaBitmap).copy(Bitmap.Config.ARGB_4444, true);
             int oldWidth = mAlphaBitmap.getWidth();
             int oldHeight = mAlphaBitmap.getHeight();
             mAlphaBitmap = zoomBitmap(mAlphaBitmap, mScale);
-            mOffsetX = (mAlphaBitmap.getWidth() - oldWidth) / 2;
-            mOffsetY = (mAlphaBitmap.getHeight() - oldHeight) / 2;
+            int newWidth = mAlphaBitmap.getWidth();
+            int newHeight = mAlphaBitmap.getHeight();
+            mOffsetX = (newWidth - oldWidth) / 2;
+            mOffsetY = (newHeight - oldHeight) / 2;
+            mAlphaARG = new int[newWidth * newHeight];
+            mAlphaBitmap.getPixels(mAlphaARG, 0, newWidth, 0, 0, newWidth,newHeight);
+        }
+
+        private Bitmap compressImage(Bitmap image) {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            image.compress(Bitmap.CompressFormat.JPEG, 30, baos);
+            int options = 100;
+            while (baos.toByteArray().length / 1024 > 100) {
+                baos.reset();
+                image.compress(Bitmap.CompressFormat.JPEG, options, baos);
+                options -= 10;
+            }
+            ByteArrayInputStream isBm = new ByteArrayInputStream(baos.toByteArray());
+            Bitmap bitmap = BitmapFactory.decodeStream(isBm, null, null);
+            return bitmap;
         }
 
         private Bitmap zoomBitmap(Bitmap bitmap, float scale) {
@@ -315,47 +328,8 @@ public class ViewMagnifier {
                     mScreenY - tempBitmap.getHeight() / 2,
                     null);
             if (mShowBottomView) {
-                Bitmap cropBitmap = cropImage(mAlphaBitmap, mRadius, (int) (mScreenX * mScale),
-                        (int) (mScreenY * mScale));
-                //canvas.drawBitmap(setBitmapAlpha(cropBitmap, (int) (mScreenX * mScale),
-                //        (int) (mScreenY * mScale)), -mOffsetX, -mOffsetY, null);
-                int cropWight = cropBitmap.getWidth();
-                int cropHeight = cropBitmap.getHeight(); 
-                int cropOffsetX = mScreenX - cropWight / 2;
-                int cropOffsetY = mScreenY - cropHeight / 2;
-                
-                int cropCenterX = cropWight / 2;
-                int cropCenterY = cropHeight / 2;
-                
-                int retX = mScreenX - mRadius;
-                int retY = mScreenY - mRadius;
-                int retX2 = mScreenX + mRadius;
-                int retY2 = mScreenY + mRadius;
-                if (retX < 0) {
-                    cropOffsetX = 0;
-                    cropCenterX += retX;
-                }
-                if (retY < 0) {
-                    cropOffsetY = 0;
-                    cropCenterY += retY;
-                }
-                if (retY2 > mAlphaBitmap.getHeight()) {
-                    cropCenterY += retY2 - mAlphaBitmap.getHeight();
-                    cropOffsetY = mScreenY - mRadius;
-                }
-                if (retX2 > mAlphaBitmap.getWidth()) {
-                    cropCenterX += retX2 - mAlphaBitmap.getWidth();
-                    cropOffsetX = mScreenX - mRadius;
-                }
-                
-                if (cropWight >= mAlphaBitmap.getWidth()) {
-                    cropOffsetX = 0;
-                }
-                if (cropHeight >= mAlphaBitmap.getHeight()) {
-                    cropOffsetY = 0;
-                }
-                Log.i("huanghua", "cropOffsetX:" + cropOffsetX + " cropOffsetY:" + cropOffsetY + " cropCenterY:" + cropCenterY);
-                canvas.drawBitmap(setBitmapAlpha(cropBitmap, cropCenterX, cropCenterY), cropOffsetX, cropOffsetY, null);
+                setBitmapAlpha(mAlphaBitmap, (int) (mScreenX * mScale), (int) (mScreenY * mScale), mAlphaARG);
+                canvas.drawBitmap(mAlphaBitmap, -mOffsetX, -mOffsetY, null);
             }
         }
     }
@@ -371,6 +345,7 @@ public class ViewMagnifier {
         int retY = y - range;
         int retX2 = x + range;
         int retY2 = y + range;
+        // 1
         if (retX < 0) {
             retX = 0;
             nw = nw + retX;
@@ -379,8 +354,9 @@ public class ViewMagnifier {
             retY = 0;
             nh = nh + retY;
         }
+        // 2
         if (retY2 > h) {
-            nh = nh - retY2 + h;
+            nh = nh - (retY2 - h);
         }
         if (retX2 > w) {
             nw = nw - retX2 + w;
@@ -391,15 +367,17 @@ public class ViewMagnifier {
         if (nh > h) {
             nh = h;
         }
+        if (nh <=0) {
+            retY = h - 1;
+            nh = 1;
+        }
         return Bitmap.createBitmap(bitmap, retX, retY, nw, nh, null, false);
     }
 
-    public Bitmap setBitmapAlpha(Bitmap sourceImg, int x, int y) {
+    public void setBitmapAlpha(Bitmap sourceImg, int x, int y, int[] argbs) {
         int width = sourceImg.getWidth();
         int height = sourceImg.getHeight();
-        int[] argb = new int[width * height];
-        sourceImg.getPixels(argb, 0, sourceImg.getWidth(), 0, 0, sourceImg.getWidth(),
-                sourceImg.getHeight());
+        int[] argb = argbs;
         for (int i = 0; i < argb.length; i++) {
             argb[i] = (0 << 24) | (argb[i] & 0x00FFFFFF);
         }
@@ -414,9 +392,9 @@ public class ViewMagnifier {
                         int sqrt = (int) Math.sqrt(i * i + j * j);
                         if (sqrt < range) {
                             int alpha = (range - Math.abs(sqrt)) * 250 / range;
-                            if (alpha > 210) {
+/*                            if (alpha > 210) {
                                 alpha = 210;
-                            }
+                            }*/
                             argb[x2] = (alpha << 24) | (argb[x2] & 0x00FFFFFF);
                         }
                     }
@@ -426,18 +404,16 @@ public class ViewMagnifier {
                         int sqrt = (int) Math.sqrt(i * i + j * j);
                         if (sqrt < range) {
                             int alpha = (range - Math.abs(sqrt)) * 250 / range;
-                            if (alpha > 210) {
+/*                            if (alpha > 210) {
                                 alpha = 210;
-                            }
+                            }*/
                             argb[x2] = (alpha << 24) | (argb[x2] & 0x00FFFFFF);
                         }
                     }
                 }
             }
         }
-        sourceImg = Bitmap.createBitmap(argb, sourceImg.getWidth(), sourceImg.getHeight(),
-                Config.ARGB_8888);
-        return sourceImg;
+        sourceImg.setPixels(argb, 0, sourceImg.getWidth(), 0, 0, sourceImg.getWidth(), sourceImg.getHeight());
     }
 
 }
