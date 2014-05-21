@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="viewtag_filepath" type="id"></item>
+    <item name="action_paste_mode_cancel" type="id"></item>
+
+    <string name="app_name">OneKeyInstall</string>
+    <string name="empty_view_prompt">APK file no installation</string>
+    <string name="dialog_hint_title">Loading</string>
+    <string name="dialog_hint_msg">Loading...</string>
+    <string name="msg_invalid_intent">The system does not support this type of file</string>
+    <string name="install">Install</string>
+    <string name="installed">Installed</string>
+
+</resources>
