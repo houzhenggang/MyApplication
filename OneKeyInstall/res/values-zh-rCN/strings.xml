@@ -4,7 +4,7 @@
     <string name="app_name">一键安装</string>
     <string name="empty_view_prompt">无可安装的APK文件</string>
     <string name="dialog_hint_title">载入</string>
-    <string name="dialog_hint_msg">载入...</string>
+    <string name="dialog_hint_msg">正在搜索apk文件...</string>
     <string name="msg_invalid_intent">系统中没有相关的应用可以打开该文件</string>
     <string name="install">安装</string>
     <string name="installed">已安装</string>

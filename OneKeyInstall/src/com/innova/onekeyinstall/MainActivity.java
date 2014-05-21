@@ -22,6 +22,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
     private QuickScanCursorAdapter mAdapter;
     private Context mContext;
     private int mSortBy;
+    private boolean mIsFirstRun = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
         setContentView(R.layout.activity_main);
 
         mContext = this;
+        mIsFirstRun = true;
         mListView = (ListView) findViewById(R.id.overview_file_list);
         mEmptyView = findViewById(R.id.overview_empty_view);
         mAdapter = new QuickScanCursorAdapter(this,
@@ -79,10 +81,11 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
     @Override
     protected void onResume() {
-        if (mAdapter != null && !mAdapter.mIsLoading) {
+        if (mAdapter != null && !mAdapter.mIsLoading && !mIsFirstRun) {
             mAdapter.updateAllApp();
             mAdapter.notifyDataSetChanged();
         }
+        mIsFirstRun = false;
         super.onResume();
     };
 

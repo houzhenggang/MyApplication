@@ -7,7 +7,7 @@
     <string name="app_name">OneKeyInstall</string>
     <string name="empty_view_prompt">APK file no installation</string>
     <string name="dialog_hint_title">Loading</string>
-    <string name="dialog_hint_msg">Loading...</string>
+    <string name="dialog_hint_msg">Searching apk file...</string>
     <string name="msg_invalid_intent">The system does not support this type of file</string>
     <string name="install">Install</string>
     <string name="installed">Installed</string>
