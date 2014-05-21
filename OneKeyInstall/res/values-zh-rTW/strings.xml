@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一鍵安裝</string>
+    <string name="empty_view_prompt">無可安裝的APK文件</string>
+    <string name="dialog_hint_title">載入</string>
+    <string name="dialog_hint_msg">正在搜索apk文件...</string>
+    <string name="msg_invalid_intent">系統中沒有相關的應用可以打開該文件</string>
+    <string name="install">安裝</string>
+    <string name="installed">已安裝</string>
+    <string name="menu_sort_type">排序</string>
+
+    <string-array name="sort_type">
+        <item>名稱</item>
+        <item>大小</item>
+    </string-array>
+
+    <string name="sort_by_asc">升序</string>
+    <string name="sort_by_desc">降序</string>
+
+</resources>

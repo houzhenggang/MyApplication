@@ -8,5 +8,14 @@
     <string name="msg_invalid_intent">系统中没有相关的应用可以打开该文件</string>
     <string name="install">安装</string>
     <string name="installed">已安装</string>
+    <string name="menu_sort_type">排序</string>
+
+    <string-array name="sort_type">
+        <item>名称</item>
+        <item>大小</item>
+    </string-array>
+
+    <string name="sort_by_asc">升序</string>
+    <string name="sort_by_desc">降序</string>
 
 </resources>

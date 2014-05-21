@@ -11,5 +11,14 @@
     <string name="msg_invalid_intent">The system does not support this type of file</string>
     <string name="install">Install</string>
     <string name="installed">Installed</string>
+    <string name="menu_sort_type">Sort</string>
+
+    <string-array name="sort_type">
+        <item>Name</item>
+        <item>Size</item>
+    </string-array>
+
+    <string name="sort_by_asc">Ascending</string>
+    <string name="sort_by_desc">Descending</string>
 
 </resources>

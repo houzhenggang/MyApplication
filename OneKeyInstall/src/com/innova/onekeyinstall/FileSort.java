@@ -353,18 +353,12 @@ public class FileSort {
     
     public static int getSelectItemByType(int type){
         switch(type){
-        case SORT_BY_TYPE:
-        case SORT_BY_TYPE_DESC:
-            return 1;
         case SORT_BY_NAME:
         case SORT_BY_NAME_DESC:
             return 0;
         case SORT_BY_SIZE_ASC:
         case SORT_BY_SIZE_DESC:
-            return 3;
-        case SORT_BY_TIME_DESC:
-        case SORT_BY_TIME_ASC:
-            return 2;
+            return 1;
         default:
             return 0;
         }
