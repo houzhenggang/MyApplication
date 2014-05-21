@@ -393,6 +393,71 @@ public class ChinaDate {
         }
     }
 
+    public static String getTomorrow(int year, int month, int day) {
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                if (day == 31) {
+                    day = 1;
+                    if (month == 12) {
+                        month = 1;
+                        year += 1;
+                    } else {
+                        month += 1;
+                    }
+                } else {
+                    day += 1;
+                }
+                break;
+            case 2:
+                boolean isLeap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+                if (isLeap) {
+                    if (day == 29) {
+                        day = 1;
+                        month += 1;
+                    } else {
+                        day += 1;
+                    }
+                } else {
+                    if (day == 28) {
+                        day = 1;
+                        month += 1;
+                    } else {
+                        day += 1;
+                    }
+                }
+                break;
+            default:
+                if (day == 30) {
+                    day = 1;
+                    if (month == 12) {
+                        month = 1;
+                        year += 1;
+                    } else {
+                        month += 1;
+                    }
+                } else {
+                    day += 1;
+                }
+                break;
+        }
+        long[] l = calElement(year, month, day);
+        StringBuffer sToday = new StringBuffer();
+        try {
+            sToday.append(nStr1[(int) l[1]]);
+            sToday.append("月");
+            sToday.append(getChinaDate((int) (l[2])));
+            return sToday.toString();
+        } finally {
+            sToday = null;
+        }
+    }
+
     private static SimpleDateFormat sdf = new SimpleDateFormat(
             "yyyy年M月d日 EEEEE");
 

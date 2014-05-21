@@ -2,9 +2,6 @@
 package com.mephone.hellohwlockscreen;
 
 import android.animation.Animator;
-import android.animation.TimeInterpolator;
-import android.animation.TypeEvaluator;
-import android.animation.ValueAnimator;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +17,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -39,6 +35,8 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private Context mContext;
     private float mDownX;
     private float mDownY;
+    private float mLostX;
+    private float mLostY;
     private float showStartX;
     private float showStartY;
     private float currentX;
@@ -52,7 +50,6 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private boolean isTouched = false;
     private static final int LOCK_MAX_LENGHT = 600;
 
-    private ValueAnimator mLightScaleAnim;
     private MyViewMagnifier mMagnifier;
 
     private final int HEXAGON_TOTAL = 9;
@@ -78,9 +75,6 @@ public class HuaWeiLockScreen extends RelativeLayout {
     private ImageView mCameraTip1;
     private ImageView mCameraTip2;
     private ImageView mCameraTip3;
-    private ValueAnimator mTipAnimator1;
-    private ValueAnimator mTipAnimator2;
-    private ValueAnimator mTipAnimator3;
     private View mTopView;
 
     private final static int MESSAGE_HIDE_MAGNIFIER = 1;
@@ -151,13 +145,21 @@ public class HuaWeiLockScreen extends RelativeLayout {
                 } else {
                     showMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y), true);
                 }
+                mLostX = x;
+                mLostY = y;
                 break;
             case MotionEvent.ACTION_MOVE:
                 int lenght = getMagnifier().calculateMoveLenght(mMoveX, mMoveY);
                 if (lenght > LOCK_MAX_LENGHT && mShowBottomView) {
                     //System.exit(0);
                 }
-                moveMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y));
+                float dx = Math.abs(x - mLostX);
+                float dy = Math.abs(y - mLostY);
+                mLostX = x;
+                mLostY = y;
+                if (dx >= 3 || dy >= 3) {
+                    moveMagnifier(Math.round(x), Math.round(y), Math.round(x), Math.round(y));
+                }
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
@@ -287,12 +289,6 @@ public class HuaWeiLockScreen extends RelativeLayout {
             b.putInt("stap", 4);
             m.setData(b);
             mHandler.sendMessageDelayed(m, 150);
-        }
-    }
-
-    private void cancelAnimator(Animator animator) {
-        if ((animator != null) && (animator.isRunning())) {
-            animator.cancel();
         }
     }
 

@@ -34,7 +34,7 @@ public class ViewMagnifier {
     protected float mScale = 1.2f;
     protected int mRadius = MIN_RADIUS;
     private int mMaxMoveLenght = 0;
-    private static final int MAX_RADIUS = 400;
+    private static final int MAX_RADIUS = 600;
     private static final int MIN_RADIUS = 40;
     private static final float MAX_SCALE = 5.0f;
     private static final float MIN_SCALE = 1.0f;

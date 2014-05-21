@@ -204,6 +204,11 @@ public class DateView extends TextView {
             holidayRes = mAllHoliday.get(chinaToday);
             if(holidayRes != null) {
                 holiday += getContext().getString(holidayRes);
+            } else {
+                String chinaTomorrow = ChinaDate.getTomorrow(c.get(Calendar.YEAR), month, day);
+                if (chinaTomorrow != null && chinaTomorrow.equals("正月初一")) {
+                    holiday += getContext().getString(R.string.chuxi);
+                }
             }
             if (mSolarTerm == null) {
                 setSolarTerm();
