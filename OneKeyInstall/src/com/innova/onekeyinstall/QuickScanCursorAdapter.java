@@ -88,7 +88,7 @@ public class QuickScanCursorAdapter extends FileAdapter implements View.OnClickL
         mListView = listview;
         mLoadCompleteListener = new FileExplorerImageLoadCompleteListener(mListView);
         mScrollListener = new FileExplorerScrollListener(mListView);
-        mListView.setOnScrollListener(mScrollListener);
+        //mListView.setOnScrollListener(mScrollListener);
         mWaitDialog = showWaitDialog();
         WaitTimer mTimer = new WaitTimer(500,500);
         mTimer.start();
@@ -109,7 +109,7 @@ public class QuickScanCursorAdapter extends FileAdapter implements View.OnClickL
         mListView = listview;
         mLoadCompleteListener = new FileExplorerImageLoadCompleteListener(mListView);
         mScrollListener = new FileExplorerScrollListener(mListView);
-        mListView.setOnScrollListener(mScrollListener);
+        //mListView.setOnScrollListener(mScrollListener);
         mWaitDialog = showWaitDialog();
         WaitTimer mTimer = new WaitTimer(500,500);
         mTimer.start();

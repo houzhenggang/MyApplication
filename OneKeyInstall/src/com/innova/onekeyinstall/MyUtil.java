@@ -11,7 +11,6 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.util.Log;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -114,7 +113,6 @@ public class MyUtil {
         List<PackageInfo> packages = pm.getInstalledPackages(0);
         for (PackageInfo i : packages) {
             result += i.applicationInfo.packageName + ",";
-            Log.i("huanghua", "result:" + result);
         }
         return result.substring(0, result.length() - 1);
     }
