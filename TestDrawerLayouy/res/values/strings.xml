@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestDrawerLayouy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="TAG_ONE">TAG_ONE</string>
+    <string name="TAG_TWO">TAG_TWO</string>
+    <string name="TAG_THREE">TAG_THREE</string>
+
+</resources>

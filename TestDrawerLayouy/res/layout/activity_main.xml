@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/one_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/two_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/tabselect"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/dialpad_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tab_one"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:text="@string/TAG_ONE" />
+
+            <View
+                android:id="@+id/tab_divider_left"
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_divider_vertical_gray_emui" />
+
+            <RadioButton
+                android:id="@+id/tab_two"
+                style="@style/main_tab_bottom"
+                android:text="@string/TAG_TWO" />
+
+            <View
+                android:id="@+id/tab_divider_right"
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_divider_vertical_gray_emui" />
+
+            <RadioButton
+                android:id="@+id/tab_three"
+                style="@style/main_tab_bottom"
+                android:text="@string/TAG_THREE" />
+        </RadioGroup>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
