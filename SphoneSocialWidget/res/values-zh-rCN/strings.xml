@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sphone_social_clock">社会时钟</string>
+    <string name="htc_date">MM月dd日</string>
+    <string name="htc_mon">周一</string>
+    <string name="htc_tue">周二</string>
+    <string name="htc_wed">周三</string>
+    <string name="htc_thu">周四</string>
+    <string name="htc_fri">周五</string>
+    <string name="htc_sat">周六</string>
+    <string name="htc_sun">周日</string>
+    <string name="htc_no_weather">无可用天气数据</string>
+    <string name="htc_default_area">中国</string>
+
+</resources>

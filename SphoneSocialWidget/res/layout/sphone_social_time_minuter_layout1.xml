@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_layout1"
+    android:layout_width="140dip"
+    android:layout_height="73dip"
+    android:layoutAnimation="@anim/sphone_layoutanim" >
+
+    <FrameLayout
+        android:id="@+id/right_FrameLayout1"
+        android:layout_width="140dip"
+        android:layout_height="73dip"
+        android:layout_gravity="top"
+        android:layout_marginTop="-74dip"
+        android:background="@drawable/dock_mode_clock_tab_up" >
+
+        <ImageView
+            android:id="@+id/right_image5"
+            android:layout_width="62dip"
+            android:layout_height="146dip"
+            android:layout_gravity="top"
+            android:layout_marginLeft="10dip" />
+
+        <ImageView
+            android:id="@+id/right_image6"
+            android:layout_width="62dip"
+            android:layout_height="146dip"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dip" />
+    </FrameLayout>
+
+</FrameLayout>
