@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="keyguard_charged" msgid="3272223906073492454">"充電完成"</string>
+    <string name="keyguard_plugged_in" msgid="8117572000639998388">"充電中 (<xliff:g id="NUMBER">%d</xliff:g><xliff:g id="PERCENT">%%</xliff:g>)"</string>
+    <string name="keyguard_low_battery" msgid="8143808018719173859">"連接充電器。"</string>
+</resources>

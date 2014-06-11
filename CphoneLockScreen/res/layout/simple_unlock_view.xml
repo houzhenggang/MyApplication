@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simple_unlock_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="65dip"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <com.android.keyguard.CarrierText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <com.android.keyguard.CphoneDigitalClock
+                android:id="@+id/hall_view_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_time_hour1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/ic_time_hour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_time_hour1" />
+
+                <ImageView
+                    android:id="@+id/ic_time_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_time_hour2" />
+
+                <ImageView
+                    android:id="@+id/ic_time_minute1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_time_dot" />
+
+                <ImageView
+                    android:id="@+id/ic_time_minute2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_time_minute1" />
+
+                <TextView
+                    android:id="@+id/ic_time_ampm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/ic_time_minute2"
+                    android:layout_gravity="bottom"
+                    android:layout_toRightOf="@+id/ic_time_minute2"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp" />
+
+            </com.android.keyguard.CphoneDigitalClock>
+
+            <com.android.keyguard.DateView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:ellipsize="none"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textSize="17dip" >
+            </com.android.keyguard.DateView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chargingstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="17.0dip" />
+
+        <TextView
+            android:id="@+id/ownerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="17.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sldie_event_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_view"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/locktip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17.0dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="17.0dip" />
+
+    <Button
+        android:id="@+id/emergencycallbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/locktip"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:drawablePadding="8dip" />
+
+    <ImageButton
+        android:id="@+id/open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="13dip" />
+
+    <LinearLayout
+        android:id="@+id/tip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/open_camera"
+        android:layout_marginBottom="-10dip"
+        android:layout_marginRight="4dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/camera_tip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-6dip"  />
+
+        <ImageView
+            android:id="@+id/camera_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-6dip"  />
+
+        <ImageView
+            android:id="@+id/camera_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flareframelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+    </FrameLayout>
+
+</RelativeLayout>
