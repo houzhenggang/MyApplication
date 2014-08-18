@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar"></style>
+    <style name="AppBaseTheme" parent="@style/PeopleTheme_new_ui"></style>
 
     <style name="AppTheme" parent="AppBaseTheme"></style>
 
@@ -12,11 +12,33 @@
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:layout_width">0dip</item>
         <item name="android:layout_weight">1.0</item>
-        <item name="android:layout_height">38dip</item>
+        <item name="android:layout_height">48dip</item>
         <item name="android:button">@null</item>
         <item name="android:background">@drawable/cphone_action_bar_tab</item>
         <item name="android:singleLine">true</item>
         <item name="android:soundEffectsEnabled">false</item>
+    </style>
+
+    <style name="PeopleTheme_new_ui" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/DialtactsActionBarStyleNewUI</item>
+        <item name="android:actionBarWidgetTheme">@style/ContactsActionBarThemeNewUI</item>
+        <item name="android:actionBarTabStyle">@style/ContactsActionBarTabView_new_ui</item>
+    </style>
+
+    <style name="DialtactsActionBarStyleNewUI" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:backgroundSplit">@drawable/ab_bottom_emui</item>
+        <item name="android:backgroundStacked">@drawable/dialpad_background</item>
+        <item name="android:displayOptions">useLogo|showTitle</item>
+    </style>
+
+    <style name="ContactsActionBarThemeNewUI" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:textColor">@*android:color/primary_text_holo_light</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+    </style>
+
+    <style name="ContactsActionBarTabView_new_ui" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/action_bar_tab_ext</item>
     </style>
 
 </resources>

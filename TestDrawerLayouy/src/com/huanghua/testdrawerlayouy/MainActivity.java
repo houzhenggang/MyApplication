@@ -1,9 +1,13 @@
 
 package com.huanghua.testdrawerlayouy;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.app.ActionBar.Tab;
+import android.app.ActionBar.TabListener;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -28,10 +32,48 @@ public class MainActivity extends Activity {
     public static final int TAB_ONE = 0;
     public static final int TAB_TWO = 1;
     public static final int TAB_THREE = 2;
+    private ActionBar mActionBar;
+    private final TabListener mTabListener = new TabListener() {
+        @Override
+        public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+        }
 
+        @Override
+        public void onTabSelected(Tab tab, FragmentTransaction ft) {
+        }
+
+        @Override
+        public void onTabReselected(Tab tab, FragmentTransaction ft) {
+        }
+    };
     private FragementOne mFragementOne;
     private FragementTwo mFragementTwo;
     private FragementThree mFragementThree;
+
+    private void setupCphoneTab() {
+        mActionBar = getActionBar();
+        mActionBar.setDisplayShowHomeEnabled(false);
+        mActionBar.setDisplayShowTitleEnabled(false);
+        mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+        setupCphoneCommon();
+        setupCphoneAll();
+        mActionBar.setSelectedNavigationItem(0);
+    }
+
+    private void setupCphoneAll() {
+        final Tab tab = mActionBar.newTab();
+        tab.setText(R.string.TAG_ONE);
+        tab.setTabListener(mTabListener);
+        mActionBar.addTab(tab);
+    }
+
+    private void setupCphoneCommon() {
+        final Tab tab = mActionBar.newTab();
+        tab.setText(R.string.TAG_TWO);
+        tab.setTabListener(mTabListener);
+        mActionBar.addTab(tab);
+    }
 
     public class ViewPagerAdapter extends FragmentPagerAdapter {
 
@@ -92,6 +134,7 @@ public class MainActivity extends Activity {
         mTabGroup.setOnCheckedChangeListener(new DialtactsRadioGroupChangeListener());
         mTabDividerLeft = findViewById(R.id.tab_divider_left);
         mTabDividerRight = findViewById(R.id.tab_divider_right);
+        setupCphoneTab();
     }
 
     @Override
