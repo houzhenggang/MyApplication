@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SPRD: Modify 20131127 Spreadst of Bug 244769 lockscreen show emergency call when no card no service @{ -->
+    <string name="kg_emergency_call_no_service">无可用网络</string>
+    <!-- @} -->
+    <!-- SPRD: Modify 20140120 Spreadst of Bug 266285 do not show unread message @{ -->
+    <string name="missed_call">%1$d个未接电话</string>
+    <string name="unread_message">%1$d条未读信息</string>
+    <!-- SPRD: Modify 20140225 Spreadst of Bug 282069 display message when message count is 3 @{ -->
+    <string name="unread_messages">%1$d条未读信息</string>
+    <!-- @} -->
+    <!-- SPRD: Modify 20140120 Spreadst of Bug 271459 no sim pin verify success top @{ -->
+    <string name="kg_sim_pin_verify_success">PIN校验成功</string>
+    <!-- @} -->
+</resources>

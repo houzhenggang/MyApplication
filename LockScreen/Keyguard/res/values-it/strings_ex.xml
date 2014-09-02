@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="kg_emergency_call_no_service">Nessuna rete disponibile</string>
+<string name="missed_call">%1$d Chiamata persa</string>
+<string name="unread_message">%1$d Messaggio non letto</string>
+<string name="unread_messages">"messaggio non letto %1$d "</string>
+<string name="kg_sim_pin_verify_success">"Verifica del PIN avvenuta con successo"</string>
+</resources>

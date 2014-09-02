@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="kg_emergency_call_no_service">कोई उपलब्‍ध नेटवर्क नहीं</string>
+<string name="missed_call">%1$d छूटी कॉल </string>
+<string name="unread_message">%1$d अपठित संदेश </string>
+<string name="unread_messages">"%1$d अपठित संदेश"</string>
+<string name="kg_sim_pin_verify_success">" PIN सत्यापन सफल"</string>
+</resources>

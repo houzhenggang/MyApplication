@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="keyguard_password_enter_pin_code">"PIN کوڈ درج کریں"</string>
+<string name="keyguard_password_enter_puk_code">"سم PUK اور نئے پن کوڈ درج کریں"</string>
+<string name="keyguard_password_enter_puk_prompt">"سم PUK کوڈ""</string>
+<string name="keyguard_password_enter_pin_prompt">"نئی سم پن کوڈ"</string>
+<string name="keyguard_password_entry_touch_hint">"<font size="17">پاس ورڈ درج کریں</font>"</string>
+<string name="keyguard_password_enter_password_code">"انلاک پاس ورڈ درج کریں"</string>
+<string name="keyguard_password_enter_pin_password_code">"درج کریں کھول پن"</string>
+<string name="keyguard_password_wrong_pin_code">"غلط PIN کوڈ!"</string>
+<string name="keyguard_label_text">"انلاک کرنے کے لئے، مینو پھر 0 دبائیں."</string>
+<string name="faceunlock_multiple_failures">"زیادہ سے زیادہ چہرہ کے ذریعہ غیرمقفل کرنے کی کوششوں کی حد تجاوزکر گئی"</string>
+<string name="keyguard_charged">"چارج"</string>
+<string name="keyguard_plugged_in">"چارج کرنا, <xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g>"</string>
+<string name="keyguard_low_battery">"اپنے چارجر متصل کریں."</string>
+<string name="keyguard_instructions_when_pattern_disabled">"مینو کے لئے کھول دبائیں."</string>
+<string name="keyguard_network_locked_message">"نیٹ ورک بند کر دیا"</string>
+<string name="keyguard_missing_sim_message_short">"کوئی سم کارڈ نہی."</string>
+<string name="keyguard_missing_sim_message" product="tablet">"ٹیبلیٹ میں سم کارڈ نہیں ہے."</string>
+<string name="keyguard_missing_sim_message" product="default">"فون میں کوئی سم کارڈ.نہیں۔"</string>
+<string name="keyguard_missing_sim_instructions">"براہ مہربانی ایک سم کارڈ داخل کریں."</string>
+<string name="keyguard_missing_sim_instructions_long">"سم کارڈ غائب یا پڑھنے کے قابل نہیں ہے. براہ مہربانی ایک سم کارڈ داخل کریں."</string>
+<string name="keyguard_permanent_disabled_sim_message_short">"ناقابل استعمال SIM کارڈ۔"</string>
+<string name="keyguard_permanent_disabled_sim_instructions">""آپ کے سم کارڈ کو مستقل طور پر غیر فعال کر دیا گیا ہے ہے. \n"</string>
+<string name="keyguard_sim_locked_message">"سم کارڈ بند کر دیا ہے"</string>
+<string name="keyguard_sim_puk_locked_message">"سم کارڈ پی یو کے لاک."</string>
+<string name="keyguard_sim_unlock_progress_dialog_message">"سم کارڈ غیر مقفل کریں\u2026"</string>
+<string name="keyguard_accessibility_widget_changed">"۔%1$s ویجٹ  %2$d کا %3$d"</string>
+<string name="keyguard_accessibility_add_widget">"ویجیٹ شامل کریں۔"</string>
+<string name="keyguard_accessibility_widget_empty_slot">"خالی"</string>
+<string name="keyguard_accessibility_unlock_area_expanded">"وسیع کردہ علاقہ غیرمقفل کریں۔"</string>
+<string name="keyguard_accessibility_unlock_area_collapsed">"علاقے انہدام غیرمقفل کریں۔"</string>
+<string name="keyguard_accessibility_widget">"<xliff:g id="widget_index">%1$s</xliff:g> ویجٹ۔"</string>
+<string name="keyguard_accessibility_user_selector">" صارف انتخاب کار"</string>
+<string name="keyguard_accessibility_status">"اسٹیٹس"</string>
+<string name="keyguard_accessibility_camera">"کیمرا"</string>
+<string name="keygaurd_accessibility_media_controls">"میڈیا کنٹرول کرتا ہے۔"</string>
+<string name="keyguard_accessibility_widget_reorder_start">"ویجیٹ پھر ترتیب شروع ہوا۔"</string>
+<string name="keyguard_accessibility_widget_reorder_end">"ویجیٹ پھر ترتیب ختم ہو گیا۔"</string>
+<string name="keyguard_accessibility_widget_deleted">"ویجٹ <xliff:g id="widget_index">%1$s</xliff:g> حذف کیا۔"</string>
+<string name="keyguard_accessibility_expand_lock_area">"غیرمقفل علاقہ وسیع کریں۔"</string>
+<string name="keyguard_accessibility_slide_unlock">"سلائیڈ غیرمقفل۔"</string>
+<string name="keyguard_accessibility_pattern_unlock">"نمونہ غیرمقفل۔"</string>
+<string name="keyguard_accessibility_face_unlock">"چہرہ غیرمقفل۔"</string>
+<string name="keyguard_accessibility_pin_unlock">"پن غیرمقفل۔"</string>
+<string name="keyguard_accessibility_password_unlock">"پاس ورڈ غیرمقفل۔"</string>
+<string name="keyguard_accessibility_pattern_area">"نمونہ علاقہ۔"</string>
+<string name="keyguard_accessibility_slide_area">"سلائیڈ علاقہ۔"</string>
+<string name="keyguard_accessibility_transport_prev_description">"پچھلا ٹریک کے بٹن"</string>
+<string name="keyguard_accessibility_transport_next_description">"اگلا، دوسرا ٹریک کے بٹن"</string>
+<string name="keyguard_accessibility_transport_pause_description">"روک دیں بٹن"</string>
+<string name="keyguard_accessibility_transport_play_description">"بٹن کھیلیں"</string>
+<string name="keyguard_accessibility_transport_stop_description">"کے بٹن بند کرو"</string>
+<string name="keyguard_accessibility_transport_thumbs_up_description">"بہت خوب"</string>
+<string name="keyguard_accessibility_transport_thumbs_down_description">"ناپسندیدہ"</string>
+<string name="keyguard_accessibility_transport_heart_description">"دل"</string>
+<string name="keyguard_accessibility_show_bouncer">"جاری رکھنے کے لئے انلاک کریں "</string>
+<string name="keyguard_accessibility_hide_bouncer">"آغاز منسوخ"</string>
+<string name="keyguard_accessibility_delete_widget_start">"گرائیں<xliff:g id="widget_index">%1$s</xliff:g> حذف کرنے کے لئے"</string>
+<string name="keyguard_accessibility_delete_widget_end">"خارج نہیں ہوگا"<xliff:g id="widget_index">%1$s</xliff:g>"</string>
+<string name="password_keyboard_label_symbol_key">"\?123"</string>
+<string name="keyboardview_keycode_cancel">"منسوخ"</string>
+<string name="keyboardview_keycode_done">"مکمل"</string>
+<string name="keyboardview_keycode_mode_change">"موڈ تبدیلی"</string>
+<string name="description_target_unlock">"انلاک"</string>
+<string name="description_target_camera">"کیمرا"</string>
+<string name="description_target_silent">"خاموش"</string>
+<string name="description_target_soundon">"آواز پر ہو"</string>
+<string name="description_target_search">"تلاش"</string>
+<string name="description_direction_up">"کے لئے <xliff:g example="Unlock" id="target_description">%s</xliff:g>."</string>
+<string name="description_direction_down">"نیچے کے لئے <xliff:g example="Unlock" id="target_description">%s</xliff:g>."</string>
+<string name="description_direction_left">""کیلیے چھوڑا <xliff:g example="Unlock" id="target_description">%s</xliff:g>."</string>
+<string name="description_direction_right">"حق کے لئے <xliff:g example="Unlock" id="target_description">%s</xliff:g>."</string>
+<string name="user_switched">"موجودہ صارف <xliff:g id="name" example="Bob">%1$s</xliff:g>."</string>
+<string name="kg_emergency_call_label">"ایمرجنسی کال"</string>
+<string name="kg_forgot_pattern_button_text">"نمونہ بھول جائیں"</string>
+<string name="kg_wrong_pattern">"غلط نمونہ"</string>
+<string name="kg_wrong_password">"غلط پاس ورڈ"</string>
+<string name="kg_wrong_pin">"غلط PIN کوڈ"</string>
+<string name="kg_too_many_failed_attempts_countdown">"میں دوبارہ کوشش کریں <xliff:g id="number">%d</xliff:g> سیکنڈ."</string>
+<string name="kg_pattern_instructions">"اپنا نمونہ بنائیں"</string>
+<string name="kg_sim_pin_instructions">"SIM کا PIN کوڈ درج کریں"</string>
+<string name="kg_pin_instructions">"PIN کوڈ درج کریں  "</string>
+<string name="kg_password_instructions">"پاس ورڈ داخل کریں"</string>
+<string name="kg_puk_enter_puk_hint">"SIM اب نااہل ہے۔ جاری رکھنے کے لیے PUK کوڈ درج کریں۔ تفصیلات کے لئے کیرئیر سے رابطہ کریں۔"</string>
+<string name="kg_puk_enter_pin_hint">"مطلوبہ PIN کوڈ درج کریں"</string>
+<string name="kg_enter_confirm_pin_hint">"مطلوبہ PIN کوڈ کی توثیق کریں"</string>
+<string name="kg_sim_unlock_progress_dialog_message">"سم کارڈ غیر مقفل کریں\u2026"</string>
+<string name="kg_invalid_sim_pin_hint">"ایک پن ہے کہ 4 سے 8 کی تعداد ہے ٹائپ کریں."</string>
+<string name="kg_invalid_sim_puk_hint">"کوئی PUK لکھیں جو8 یا زیادہ نمبروں کا ہو."</string>
+<string name="kg_invalid_puk">"درست PUK کوڈ دوبارہ داخل کریں۔ بار بار کی کوششوں کو مستقل طور پر SIM نااہل ہو جائیں گے۔"</string>
+<string name="kg_invalid_confirm_pin_hint" product="default">"PIN کوڈ مشابہ نہیں"</string>
+<string name="kg_login_too_many_attempts">"بہت سے پیٹرن کو کرنے کی کوشش!"</string>
+<string name="kg_login_instructions">"انلاک کرنے کے لئے، اپنے گوگل اکاؤنٹ میں سائن ان کریں"</string>
+<string name="kg_login_username_hint">"صارف کا نام (ای میل)"</string>
+<string name="kg_login_password_hint">"لفظ شناخت"</string>
+<string name="kg_login_submit_button">"سائن ان کریں"</string>
+<string name="kg_login_invalid_input">"غلط صارف کا نام یا پاس ورڈ."</string>
+<string name="kg_login_account_recovery_hint">"اپنا صارف کا نام یا پاس ورڈ بھول گئے؟\nدورہ کریں <b>google.com/accounts/recovery</b>"</string>
+<string name="kg_login_checking_password">"کھاتےکی پڑتال کررہا ہے..."</string>
+<string name="kg_too_many_failed_pin_attempts_dialog_message">" آپ نے غلط طریقے سے آپ کے پن نمبر درج کیا ہے <xliff:g id="number">%d</xliff:g> بار.n\n\براہ مہربانی دوبارہ کوشش کریں <xliff:g id="number">%d</xliff:g>سیکنڈز."</string>
+<string name="kg_too_many_failed_password_attempts_dialog_message">" آپ نے غلط طریقے سے اپنا پاس ورڈ میں داخل ہے <xliff:g id="number">%d</xliff:g> بار. n\n\ براہ مہربانی دوبارہ کوشش کریں <xliff:g id="number">%d</xliff:g>سیکنڈز."</string>
+<string name="kg_too_many_failed_pattern_attempts_dialog_message">"آپ نےغلط طریقے سے ان لاک پیٹرن کھولنے چاھا ھے <xliff:g id="number">%d</xliff:g> اوقات. n\n\ براہ مہربانی اس میں دوبارہ کوشش کریں <xliff:g id="number">%d</xliff:g> سیکنڈ."</string>
+<string name="kg_failed_attempts_almost_at_wipe" product="tablet">" آپ نے غلط طریقے سے ٹیبلٹ کو غیر مقفل کرنے کی کوشش کی ہے <xliff:g id="number">%d</xliff:g>بار. کے بعد<xliff:g id="number">%d</xliff:g> زیادہ ناکام کوششیں، ٹیبلٹ فیکٹری ڈیفالٹ ری سیٹ کیا جائے گا اور تمام صارف ڈیٹا ختم ہو جائے گا."</string>
+<string name="kg_failed_attempts_almost_at_wipe" product="default">" آپ نے غلط طریقے سے فون انلاک کرنے کی کوشش کی ہے <xliff:g id="number">%d</xliff:g> بار. کے بعد <xliff:g id="number">%d</xliff:g> زیادہ ناکام کوششیں، فون فیکٹری ڈیفالٹ ری سیٹ کیا جائے گا اور تمام صارف ڈیٹا ختم ہو جائے گا."</string>
+<string name="kg_failed_attempts_now_wiping" product="tablet">"آپ نے غلط طریقے سے ٹیبلٹ کو غیر مقفل کرنے کی کوشش کی ہے<xliff:g id="number">%d</xliff:g> بار.ٹیبلٹ فیکٹری ڈیفالٹ ری سیٹ کیا جائے گا."</string>
+<string name="kg_failed_attempts_now_wiping" product="default">" آپ نے غلط طریقے سے فون انلاک کرنے کی کوشش کی ہے <xliff:g id="number">%d</xliff:g>بار.فون فیکٹری ڈیفالٹ ری سیٹ کیا جائے گا."</string>
+<string name="kg_failed_attempts_almost_at_login" product="tablet">"آپ <xliff:g id="number">%d</xliff:g> بار غلط طریقے سے اَن لاک پیٹرن بنا چکے ھیں، <xliff:g id="number">%d</xliff:g> اتنی مزید ناکام کوششوں کے بعد، آپ کو ای میل ک ذریعے اپنے ٹیبلیٹ کہ کھولنے کا کہا جاے گا۔ \n\n ۔ <xliff:g id="number">%d</xliff:g> سیکنڈذ میں دوبارہ کوشش کریں "</string>
+<string name="kg_failed_attempts_almost_at_login" product="default">"آپ <xliff:g id="number">%d</xliff:g> بار غلط طریقے سے اَن لاک پیٹرن بنا چکے ھیں، <xliff:g id="number">%d</xliff:g> اتنی مزید ناکام کوششوں کے بعد، آپ کو ای میل ک ذریعے اپنے ٹیبلیٹ کہ کھولنے کا کہا جاے گا۔ \n\n ۔ <xliff:g id="number">%d</xliff:g> سیکنڈذ میں دوبارہ کوشش کریں "</string>
+<string name="kg_text_message_separator" product="default">" \u2014 "</string>
+<string name="kg_reordering_delete_drop_target_text">"حذف کریں"</string>
+<string name="kg_password_wrong_pin_code_pukked">"غلط سم پن کوڈ۔ اب ضروری ہے کے آپ اپنی ڈیوائس کو انلاک کرنے کے لیئے اپنے کیرئر سے رابطہ کریں۔"</string>
+<plurals name="kg_password_wrong_pin_code">
+<item quantity="one">"غلط سم پن کوڈ۔اپنی ڈیوائس کو انلاک کرنے کے لیئے اپنے کیرئر سے رابطہ کرنے سے پہلے آپ کے پاس ہیں<xliff:g id="number">%d</xliff:g> باقی کوششیں"</item>
+<item quantity="other">"غلط سم پن کوڈ۔ آپ کے پاس ہیں<xliff:g id="number">%d</xliff:g> باقی کوششیں"</item>
+</plurals>
+<string name="kg_password_wrong_puk_code_dead">"سم ناقابل استعمال ہے. اپنے کیریئر سے رابطہ کریں"</string>
+<plurals name="kg_password_wrong_puk_code">
+<item quantity="one">"غلط سم PUK کوڈ،آپ کے پاس<xliff:g id="number">%d</xliff:g>باقی کوششیں ہیں اس سے پہلے کے سم مستقل طور پر ناقابل استعمال ہوجائے"</item>
+<item quantity="other">"غلط سم PUK کوڈ،آپ کے پاس<xliff:g id="number">%d</xliff:g>باقی کوششیں ہیں اس سے پہلے کے سم مستقل طور پر ناقابل استعمال ہوجائے"</item>
+</plurals>
+<string name="kg_password_pin_failed">"پن کوڈ ان پٹ غلطی"</string>
+<string name="kg_password_puk_failed">"۔PUK کوڈ ان پٹ غلطی"</string>
+<string name="kg_pin_accepted">"کوڈ قبول ہوگیا ہے"</string>
+<string name="keyguard_transport_prev_description">"پچھلا ٹریک کے بٹن"</string>
+<string name="keyguard_transport_next_description">"اگلا، دوسرا ٹریک کے بٹن"</string>
+<string name="keyguard_transport_pause_description">"روک دیں بٹن"</string>
+<string name="keyguard_transport_play_description">"بٹن کھیلیں"</string>
+<string name="keyguard_transport_stop_description">"کے بٹن بند کرو"</string>
+<string name="keyguard_carrier_default">"سروس نہیں ہے"</string>
+<string name="kg_emergency_call_no_service">"کوئی نیٹ ورک دستیاب نہیں"</string>
+<string name="missed_call">"مسڈ کال"%1$d"</string>
+<string name="unread_message">"بغیر پڑھا ہوا پیغام %1$d "</string>
+<string name="unread_messages">"بغیر پڑھا ہوا پیغام %1$d "</string>
+<string name="kg_sim_pin_verify_success">"۔PIN کی تصدیق کامیاب"</string>
+</resources>

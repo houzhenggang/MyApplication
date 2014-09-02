@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="kg_emergency_call_no_service">Không có mạng khả dụng</string>
+<string name="missed_call">"%1$d Cuộc gọi nhỡ"</string>
+<string name="unread_message">"%1$d Tin nhắn chưa đọc"</string>
+<string name="unread_messages">"%1$d Tin nhắn chưa đọc"</string>
+<string name="kg_sim_pin_verify_success">"Xác nhận PIN thành công"</string>
+</resources>

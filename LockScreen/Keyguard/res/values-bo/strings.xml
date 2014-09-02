@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="keyguard_password_enter_pin_code">"PIN ཨང་གྲངས་ནང་འཇུག"</string>
+<string name="keyguard_password_enter_puk_code">"SIM PUKདང་PINཨང་གསར་བ་བཏགས་རོགས།"</string>
+<string name="keyguard_password_enter_puk_prompt">"SIM PUK ཨང་།"</string>
+<string name="keyguard_password_enter_pin_prompt">"SIMབྱང་བུའི་PINཨང་གསར་བ།"</string>
+<string name="keyguard_password_entry_touch_hint">"<font size="17">རེག་སྟེ་གསང་གྲངས་ནང་འཇུག་བྱེད་པ</font>"</string>
+<string name="keyguard_password_enter_password_code">"གསང་གྲངས་ནང་འཇུག་བྱས་ཏེ་ཟྭ་ཕྱེས་པ།"</string>
+<string name="keyguard_password_enter_pin_password_code">"PIN ནང་འཇུག་བྱས་ཏེ་ཟྭ་ཕྱེས་པ།"</string>
+<string name="keyguard_password_wrong_pin_code">"PIN ཨང་གྲངས་ནོར་འདུག"</string>
+<string name="keyguard_label_text">"ཐོག་མར Menu དང་རྗེས་སུ 0 མནན་ཏེ་ཟྭ་ཕྱེས་པ།"</string>
+<string name="faceunlock_multiple_failures">"གདོང་རིས་སྒྲོག་འབྱེད་ཐེངས་གྲངས་ཀྱི་གོང་མཐའ་ལས་བརྒལ།"</string>
+<string name="keyguard_charged">"ཡོངས་སུ་གང་ཡོད།"</string>
+<string name="keyguard_plugged_in">"གློག་གསོག་བཞིན་པ <xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g>"</string>
+<string name="keyguard_low_battery">"ཁྱེད་གློག་གསོག་ཆས་དང་འབྲེལ་མཐུད་བྱེད་པ།"</string>
+<string name="keyguard_instructions_when_pattern_disabled">"Menu མནན་ཏེ་ཟྭ་ཕྱེས་པ།"</string>
+<string name="keyguard_network_locked_message">"དྲ་བའི་སྒོ་བརྒྱབ་པ"</string>
+<string name="keyguard_missing_sim_message_short">"SIM བྱང་བུ་མི་འདུག"</string>
+<string name="keyguard_missing_sim_message" product="tablet">"ལེབ་ངོས་རྩིས་འཁོར་དུ SIMབྱང་བུ་མི་འདུག"</string>
+<string name="keyguard_missing_sim_message" product="default">"ཁ་པར་ནང་དུ SIM བྱང་བུ་མི་འདུག"</string>
+<string name="keyguard_missing_sim_instructions">"ཁྱེད་ཀྱིས SIM བྱང་བུ་འཇོག་རོགས།"</string>
+<string name="keyguard_missing_sim_instructions_long">"SIM བྱང་བུ་བོར་བའམ་འདོན་ཐབས་མེད་ན། SIM བྱང་བུ་གཞན་པ་ཞིག་འཇོག་རོགས།"</string>
+<string name="keyguard_permanent_disabled_sim_message_short">"SIMབྱང་བུ་སྤྱོད་ཐབས་མི་འདུག"</string>
+<string name="keyguard_permanent_disabled_sim_instructions">"SIM བྱང་བུ་གཏན་དུ་བཀོལ་མཚམས་བཞག་པ། \nཁྱེད་ཀྱི་སྐུད་མེད་ཞབས་ཞུའི་ཚོང་བདག་དང་འབྲེལ་གཏུག་བྱས་ཏེSIM བྱང་བུ་གཞན་ཞིག་ལེན་པ།"</string>
+<string name="keyguard_sim_locked_message">"SIM བྱང་བུའི་སྒྲོག"</string>
+<string name="keyguard_sim_puk_locked_message">"SIM བྱང་བུ་ལPUKཨང་གྲངས་ཀྱིས་ཟྭ་བརྒྱབ་འདུག"</string>
+<string name="keyguard_sim_unlock_progress_dialog_message">"SIM བྱང་བུའི་ཁ་འབྱེད་བཞིན་པ།"</string>
+<string name="keyguard_accessibility_widget_changed">"%1$s. %3$dཡི་ལྷུ་ལག %2$d "</string>
+<string name="keyguard_accessibility_add_widget">"ལྷུ་ཆས་སྣོན།"</string>
+<string name="keyguard_accessibility_widget_empty_slot">"སྟོང་།"</string>
+<string name="keyguard_accessibility_unlock_area_expanded">"སྒྲོག་སེལ་ཁུལ་གྱི་ཁ་བཀྲམས་ཟིན།"</string>
+<string name="keyguard_accessibility_unlock_area_collapsed">"སྒྲོག་སེལ་ཁུལ་བལྟབས་ཟིན།"</string>
+<string name="keyguard_accessibility_widget">"<xliff:g id="widget_index">%1$s</xliff:g> ལྷུ་ལག"</string>
+<string name="keyguard_accessibility_user_selector">"བཀོལ་བདག་འདམ་ཆས།"</string>
+<string name="keyguard_accessibility_status">"རྣམ་པའི་བརྡ་འཕྲིན།"</string>
+<string name="keyguard_accessibility_camera">"པར་ཆས།"</string>
+<string name="keygaurd_accessibility_media_controls">"སྨྱན་གཟུགས་ཚོད་འཛིན།"</string>
+<string name="keyguard_accessibility_widget_reorder_start">"ལྷུ་ལག་སླར་སྒྲིག་གི་མགོ་བརྩམས་ཟིན།"</string>
+<string name="keyguard_accessibility_widget_reorder_end">"ལྷུ་ལག་སླར་སྒྲིག་གི་མཇུག་རྫོགས།"</string>
+<string name="keyguard_accessibility_widget_deleted">"ལྷུ་ལག <xliff:g id="widget_index">%1$s</xliff:g> བསུབས་ཟིན།"</string>
+<string name="keyguard_accessibility_expand_lock_area">"སྒྲོག་སེལ་ཁུལ་གྱི་ཁ་འགྲེམ།"</string>
+<string name="keyguard_accessibility_slide_unlock">"འདྲེད་འགུལ་སྒྲོག་སེལ།"</string>
+<string name="keyguard_accessibility_pattern_unlock">"པར་རིས་སྒྲོག་སེལ།"</string>
+<string name="keyguard_accessibility_face_unlock">"གདོང་རུས་སྒྲོག་སེལ།"</string>
+<string name="keyguard_accessibility_pin_unlock">"PINསྒྲོག་སེལ།"</string>
+<string name="keyguard_accessibility_password_unlock">"གསང་ཨང་སྒྲོག་སེལ།"</string>
+<string name="keyguard_accessibility_pattern_area">"པར་རིས་ཁུལ།"</string>
+<string name="keyguard_accessibility_slide_area">"འདྲེད་འགུལ་ཁུལ།"</string>
+<string name="keyguard_accessibility_transport_prev_description">"གོང་མའི་ཐེབ་གནོན།"</string>
+<string name="keyguard_accessibility_transport_next_description">"ཞོལ་མའི་མཐེབ་གནོན།"</string>
+<string name="keyguard_accessibility_transport_pause_description">"མཚམས་གཅོད་མཐེབ་གནོན།"</string>
+<string name="keyguard_accessibility_transport_play_description">"གཏོང་བའི་མཐེབ་གནོན།"</string>
+<string name="keyguard_accessibility_transport_stop_description">"མཚམས་འཇོག་མཐེབ་གནོན།"</string>
+<string name="keyguard_accessibility_transport_thumbs_up_description">"ཡག་པོ་རེད།"</string>
+<string name="keyguard_accessibility_transport_thumbs_down_description">"ཡག་པོ་མ་རེད།"</string>
+<string name="keyguard_accessibility_transport_heart_description">"སེམས་པ།"</string>
+<string name="keyguard_accessibility_show_bouncer">"སྒྲོག་སེལ་མུ་མཐུད།"</string>
+<string name="keyguard_accessibility_hide_bouncer">"སྒུལ་སློང་བ་སྤངས།"</string>
+<string name="keyguard_accessibility_delete_widget_start">" <xliff:g id="widget_index">%1$s</xliff:g> གསུབ་བྱར་འབེབ།"</string>
+<string name="keyguard_accessibility_delete_widget_end">"<xliff:g id="widget_index">%1$s</xliff:g> གསུབ་ངེས་མིན།"</string>
+<string name="password_keyboard_label_symbol_key">"\?123"</string>
+<string name="keyboardview_keycode_cancel">"སྐྱུར་བ།"</string>
+<string name="keyboardview_keycode_done">"ལེགས་གྲུབ།"</string>
+<string name="keyboardview_keycode_mode_change">"རྣམ་པ་བསྒྱུར་བཅོས།"</string>
+<string name="description_target_unlock">"སྒོ་ཕྱེ་བ།"</string>
+<string name="description_target_camera">"པར་ཆས།"</string>
+<string name="description_target_silent">"སྒྲ་མེད།"</string>
+<string name="description_target_soundon">"སྒྲ་འབྱེད་པ"</string>
+<string name="description_target_search">"འཚོལ་བཤེར།"</string>
+<string name="description_direction_up">"ཡར་ཕྱོགས་སུ <xliff:g example="Unlock" id="target_description">%s</xliff:g>"</string>
+<string name="description_direction_down">"འོག་ཕྱོགས་སུ <xliff:g example="Unlock" id="target_description">%s</xliff:g>"</string>
+<string name="description_direction_left">""གཡོན་ཕྱོགས་སུ <xliff:g example="Unlock" id="target_description">%s</xliff:g>"</string>
+<string name="description_direction_right">"གཡས་ཕྱོགས་སུ <xliff:g example="Unlock" id="target_description">%s</xliff:g>"</string>
+<string name="user_switched">"ད་སྐབས་ཀྱི་བཀོལ་བདག་ནི་<xliff:g id="name" example="Bob">%1$s</xliff:g>ཡིན།"</string>
+<string name="kg_emergency_call_label">"ཛ་དྲག་སྐྱོབ་རོགས།"</string>
+<string name="kg_forgot_pattern_button_text">"པར་རིས་བརྗེད་ཟིན།"</string>
+<string name="kg_wrong_pattern">"པར་རིས་ནོར།"</string>
+<string name="kg_wrong_password">"གསང་ཨང་ནོར།"</string>
+<string name="kg_wrong_pin">"PINནོར།"</string>
+<string name="kg_too_many_failed_attempts_countdown">"སྐར་ཆ་<xliff:g id="NUMBER">%d</xliff:g>རྗེས་ལ་བསྐྱར་ལྟ།"</string>
+<string name="kg_pattern_instructions">"ཁྱེད་ཀྱི་པར་རིས་ཕྲིས།"</string>
+<string name="kg_sim_pin_instructions">"SIM PINཕྲིས།"</string>
+<string name="kg_pin_instructions">"PINཕྲིས།"</string>
+<string name="kg_password_instructions">"གསང་ཨང་ནང་འཇུག་བྱེད། "</string>
+<string name="kg_puk_enter_puk_hint">"SIM ནི་བཀོལ་མཚམས་བཞག PUKཨང་ནང་འཇུག་བྱས་ཏེ་མུ་མཐུད་ནས་སྤྱོད། ཞིབ་ཕྲའི་གནས་ཚུལ་ཚོང་གཉེར་པའི་སར་ལེན་དགོས།"</string>
+<string name="kg_puk_enter_pin_hint">"རེ་བའི་PINཨང་ནང་འཇུག་བྱེད།"</string>
+<string name="kg_enter_confirm_pin_hint">"རེ་བའི་PINཨང་འཁེལ་ལེན་བྱེད་རོགས།"</string>
+<string name="kg_sim_unlock_progress_dialog_message">"SIM བྱང་བུའི་ཁ་འབྱེད་བཞིན་པ།"</string>
+<string name="kg_invalid_sim_pin_hint">"གྲངས་གནས་4ནས་8བར་གྱི་PINནང་འཇུག་བྱེད།"</string>
+<string name="kg_invalid_sim_puk_hint">"PUKཨང་དུ་གྲངས་གནས་8འམ་དེ་ལ་མང་བ་འདུས་ངེས།"</string>
+<string name="kg_invalid_puk">"སླར་PUKཨང་དག་པོ་ནང་འཇུག་བྱེད་རོགས། ཚོད་ལྟ་བསྐྱར་ཟློས་བྱས་ན་SIMསྤྱོད་སྒོ་ཡུན་གཏན་དུ་སྟེམ་ངེས་ཡིན།"</string>
+<string name="kg_invalid_confirm_pin_hint" product="default">"PIN ཨང་མི་དག"</string>
+<string name="kg_login_too_many_attempts">"དཔེ་རིས་བལྟ་ཞིབ་ཚད་གྲངས་མང་དྲགས་པ།"</string>
+<string name="kg_login_instructions">"ཟྭ་འབྱེད་དགོས་ན། ཁྱེད་ཀྱིས Google རྩིས་ཐོར་ཐོ་འགོད་བྱེད་དགོས།"</string>
+<string name="kg_login_username_hint">"ཐོ་འགོད་བྱེད་མཁན་གྱི་མིང་། (ཡིག་ཟམ།)"</string>
+<string name="kg_login_password_hint">"གསང་ཨང་།"</string>
+<string name="kg_login_submit_button">"ཐོ་འགོད།"</string>
+<string name="kg_login_invalid_input">"ཐོ་འགོད་མཁན་གྱི་མིང་ངམ་གསང་གྲངས་ལ་ནུས་པ་མེད།"</string>
+<string name="kg_login_account_recovery_hint">"ཁྱེད་ཀྱི་ཐོ་འགོད་མིང་དང་གསང་གྲངས་བརྗེད་སོང་ངམ། \n<b>google.com/accounts/recovery</b>བལྟ་རོགས།"</string>
+<string name="kg_login_checking_password">"རྩིས་ཐོར་ལྟ་བཤེར་བྱེད་བཞིན་འདུག\u2026 "</string>
+<string name="kg_too_many_failed_pin_attempts_dialog_message">"ཁྱེད་ཀྱིས་ནང་འཇུག་བྱས་པའི PIN <xliff:g id="number">%d</xliff:g> ནོར་འདུག \n\nསྐར་ཆ <xliff:g id="number">%d</xliff:g> རྗེས་སུ་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས། "</string>
+<string name="kg_too_many_failed_password_attempts_dialog_message">"ཁྱེད་ཀྱིས་ནང་འཇུག་བྱས་པའི་གསང་གྲངས་ཐེངས <xliff:g id="number">%d</xliff:g> ནོར་འདུག \n\nསྐར་ཆ <xliff:g id="number">%d</xliff:g> རྗེས་སུ་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས། "</string>
+<string name="kg_too_many_failed_pattern_attempts_dialog_message">" ཁྱེད་ཀྱིས་བརྙན་རིས་ཟྭ་འབྱེད་ཀྱི་གྲངས་ཀ་ཐེངས <xliff:g id="number">%d</xliff:g>ནོར་འདུག \n\nསྐར་ཆ <xliff:g id="number">%d</xliff:g> རྗེས་སུ་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས། "</string>
+<string name="kg_failed_attempts_almost_at_wipe" product="tablet">"ཁྱེད་ཀྱིས་ངོས་ལེབ་རྩིས་འཁོར་ཟྭ་འབྱེད་བྱས་པ་ཐེངས<xliff:g id="number">%d</xliff:g> ནོར་སོང་། ཐེངས <xliff:g id="number">%d</xliff:g> རྗེས་སུ་ལེགས་འགྲུབ་མ་བྱུང་ན། ངོས་ལེབ་རྩིས་འཁོར་གྱིས་བཟོ་གྲྭའི་ཇུས་འགོད་སླར་གསོ་བྱེད་པ་དང་གྲངས་ཀ་ཡོད་ཚད་བོར་ངེས། "</string>
+<string name="kg_failed_attempts_almost_at_wipe" product="default">" ཁྱེད་ཀྱིས་ཁ་པར་ཟྭ་འབྱེད་བྱས་པ་ཐེངས <xliff:g id="number">%d</xliff:g> ནོར་སོང་། ཐེངས <xliff:g id="number">%d</xliff:g> རྗེས་སུ་ལེགས་འགྲུབ་མ་བྱུང་ན། ལག་འཁྱེར་ཁ་པར་གྱིས་བཟོ་གྲྭའི་ཇུས་འགོད་སླར་གསོ་བྱེད་པ་དང་གྲངས་ཀ་ཡོད་ཚད་བོར་ངེས།"</string>
+<string name="kg_failed_attempts_now_wiping" product="tablet">" ཁྱེད་ཀྱི་ངོས་ལེབ་རྩིས་འཁོར་ཟྭ་འབྱེད་བྱས་པ་ཐེངས <xliff:g id="number">%d</xliff:g> ནོར་སོང་། ངོས་ལེབ་རྩིས་འཁོར་གྱིས་བཟོ་གྲྭའི་ཇུས་འགོད་རྣམ་པ་སླར་གསོ་བྱེད་རྒྱུ་རེད། "</string>
+<string name="kg_failed_attempts_now_wiping" product="default">" ཁྱེད་ཀྱིས་ངོས་ལག་འཁྱེར་ཁ་པར་ཟྭ་འབྱེད་བྱས་པ་ཐེངས<xliff:g id="number">%d</xliff:g> ནོར་སོང་། ལག་འཁྱེར་ཁ་པར་གྱིས་བཟོ་གྲྭའི་ཇུས་འགོད་རྣམ་པ་སླར་གསོ་བྱེད་རྒྱུ་རེད། "</string>
+<string name="kg_failed_attempts_almost_at_login" product="tablet">"ཁྱེད་ཀྱིས་སྒྲོག་སེལ་པར་རིས་ཐེངས་ <xliff:g id="number">%d</xliff:g> ལ་ནོར་འཁྲུལ་དུ་བྲིས། ཚོད་ལྟ་ <xliff:g id="number">%d</xliff:g>ཡི་རྗེས་སུ་མ་འགྲུབ་ན། ཁྱེད་ལ་གློག་རྡུལ་སྦྲག་འཕྲིན་རྩིས་ཐོ་བཀོལ་ནས་སྙོམ་ལེབ་གློག་ཀླད་ཀྱི་སྒྲོག་སེལ་དུ་འཇུག \n\n སྐར་ཆ་ <xliff:g id="number">%d</xliff:g> རྗེས་སུ་སླར་ཚོད་ལྟ་བྱེད་རོགས།"</string>
+<string name="kg_failed_attempts_almost_at_login" product="default">"ཁྱེད་ཀྱིས་སྒྲོག་སེལ་པར་རིས་ཐེངས་ <xliff:g id="number">%d</xliff:g> ལ་ནོར་འཁྲུལ་དུ་བྲིས། ཚོད་ལྟ་<xliff:g id="number">%d</xliff:g>ཡི་རྗེས་སུ་མ་འགྲུབ་ན། ཁྱེད་ལ་གློག་རྡུལ་སྦྲག་འཕྲིན་རྩིས་ཐོ་བཀོལ་ནས་ཁ་པར་གྱི་སྒྲོག་སེལ་དུ་འཇུག \n\n སྐར་ཆ་ <xliff:g id="number">%d</xliff:g> རྗེས་སུ་སླར་ཚོད་ལྟ་བྱེད་རོགས།"</string>
+<string name="kg_text_message_separator" product="default">" \u2014 "</string>
+<string name="kg_reordering_delete_drop_target_text">"སུབ་པ།"</string>
+<string name="kg_password_wrong_pin_code_pukked">"SIM PIN ཨང་ནོར་འདུག ཁྱེད་ཀྱིས་ངེས་པར་ཁྱེད་ཀྱི་ཚོང་གཉེར་བར་འབྲེལ་གཏུག་བྱས་ཏེ་སྒྲིག་ཆས་ཀྱི་སྒྲོག་སེལ་དགོས།"</string>
+<plurals name="kg_password_wrong_pin_code">
+<item quantity="one">"SIM PIN ཨང་ནོར་འདུག  ཁྱེད་ལ་ཚོད་ལྟ་བྱེད་པའི་གོ་སྐབས <xliff:g id="number">%d</xliff:g>འདུག གལ་ཏེ་ད་དུང་མ་འགྲུབ་ན་ངེས་པར་ཁྱེད་ཀྱི་ཚོང་གཉེར་པར་འབྲེལ་གཏུག་བྱས་ཏེ་ཁྱེད་ཀྱི་སྒྲིག་ཆས་ཀྱི་སྒྲོག་སེལ་དགོས། "</item>
+<item quantity="other">"SIM PIN ཨང་ནོར་འདུག ཁྱེད་ལ་ཚོད་ལྟ་བྱེད་པའི་གོ་སྐབས་<xliff:g id="number">%d</xliff:g>འདུག"</item>
+</plurals>
+<string name="kg_password_wrong_puk_code_dead">"SIM ནི་སྤྱོད་ཐབས་མི་འདུག ཁྱེད་ཀྱི་ཚོང་གཉེར་པར་འབྲེལ་གཏུག་བྱེད་རོགས།"</string>
+<plurals name="kg_password_wrong_puk_code">
+<item quantity="one">"SIM PIN ཨང་ནོར་འདུག ཁྱེད་ཀྱི་SIM གཏན་ནས་སྤྱོད་ཐབས་མེད་པར་འགྱུར་བའི་སྔོན་དུ་ཚོད་ལྟ་བྱེད་པའི་གོ་སྐབས་<xliff:g id="number">%d</xliff:g> འདུག "</item>
+<item quantity="other">"SIM PIN ཨང་ནོར་འདུག ཁྱེད་ཀྱི་SIMགཏན་ནས་སྤྱོད་ཐབས་མེད་པར་འགྱུར་བའི་སྔོན་དུ་ཚོད་ལྟ་བྱེད་པའི་གོ་སྐབས་<xliff:g id="number">%d</xliff:g>འདུག"</item>
+</plurals>
+<string name="kg_password_pin_failed">"PIN ཨང་ནང་འཇུག་བྱས་པ་ནོར།"</string>
+<string name="kg_password_puk_failed">"PUKཨང་ནང་འཇུག་བྱས་པ་ནོར།"</string>
+<string name="kg_pin_accepted">"ཨང་དག་པོ་རེད།"</string>
+<string name="keyguard_transport_prev_description">"གོང་མའི་ཐེབ་གནོན།"</string>
+<string name="keyguard_transport_next_description">"ཞོལ་མའི་མཐེབ་གནོན།"</string>
+<string name="keyguard_transport_pause_description">"མཚམས་གཅོད་མཐེབ་གནོན།"</string>
+<string name="keyguard_transport_play_description">"གཏོང་བའི་མཐེབ་གནོན།"</string>
+<string name="keyguard_transport_stop_description">"མཚམས་འཇོག་མཐེབ་གནོན།"</string>
+<string name="keyguard_carrier_default">"ཞབས་ཞུ་མི་འདུག"</string>
+<string name="kg_emergency_call_no_service">"སྤྱོད་ཐུབ་པའི་དྲ་རྒྱ་མི་འདུག"</string>
+<string name="missed_call">"ཁ་པར་%1$dམ་བླངས།"</string>
+<string name="unread_message">"ཆ་འཕྲིན་%1$dམ་བཏོན།"</string>
+<string name="unread_messages">"ཆ་འཕྲིན་%1$dམ་བཏོན།"</string>
+<string name="kg_sim_pin_verify_success">"PIN དག་བཤེར་འགྲུབ།"</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="kg_emergency_call_no_service">Tidak tersedia jaringan</string>
+<string name="missed_call">%1$d panggilan tak terjawab</string>
+<string name="unread_message">%1$d pesan tak terbaca</string>
+<string name="unread_messages">"%1$d pesan tidak dibaca"</string>
+<string name="kg_sim_pin_verify_success">"Memeriksa PIN berhasil"</string>
+</resources>

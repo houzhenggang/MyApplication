@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="keyguard_password_enter_pin_code">"PIN نومۇرىنى كىرگۈزۈش"</string>
+<string name="keyguard_password_enter_puk_code">"  "نۇمۇرىنى كىرگۈزۈڭPINنۇمۇرى ۋە يېڭى PUKكارتىنىڭ SIM""</string>
+<string name="keyguard_password_enter_puk_prompt">"    "نۇمۇرىPUKكارتىنىڭ SIM""</string>
+<string name="keyguard_password_enter_pin_prompt">"    "نۇمۇرىPINكارتىنىڭ يېڭى SIM""</string>
+<string name="keyguard_password_entry_touch_hint">"<font size="17">" بېسىپ كود كىرگۈزگىلى بولىدۇ "</font>"</string>
+<string name="keyguard_password_enter_password_code">"قولۇپنى ئېچىش ئۈچۈن مەخپى شىفىرنى كىرگۈزۈش"</string>
+<string name="keyguard_password_enter_pin_password_code">"PIN نومۇرىنى كىرگۈزۈپ قولۇپ ئېچىش"</string>
+<string name="keyguard_password_wrong_pin_code">"خاتا PIN نۇمۇرى!"</string>
+<string name="keyguard_label_text">"قۇلۇپنى ئاچماقچى بولسىڭىز، تىزىملىك بىلەن 0نى بېسىڭ."</string>
+<string name="faceunlock_multiple_failures">"ئادەم يۈزى بىلەن ئېچىقا ئۇرۇنۇش قېتىم سانى يۇقىرى چەكتىن ئېشىپ كەتتى"</string>
+<string name="keyguard_charged">"توك قاچىلاندى"</string>
+<string name="keyguard_plugged_in">"توك قاچىلىنىۋاتىدۇ، <xliff:g id="NUMBER">%d</xliff:g><xliff:g id="PERCENT">%%</xliff:g>""</string>
+<string name="keyguard_low_battery">"توك قاچىلىغۇچقا ئۇلاش."</string>
+<string name="keyguard_instructions_when_pattern_disabled">"ئېچىش مۇندەرىجىسىنى بېسىڭ."</string>
+<string name="keyguard_network_locked_message">"تور ئېتىۋېتىلگەن"</string>
+<string name="keyguard_missing_sim_message_short">"اSIMكارتا يوق."</string>
+<string name="keyguard_missing_sim_message" product="tablet">"تاختا كومپيۇتېردا SIM كارتىسى يوق."</string>
+<string name="keyguard_missing_sim_message" product="default">"تېلگۇنىڭىزداSIMكارتا يوق."</string>
+<string name="keyguard_missing_sim_instructions">"SIM كارتىنى كۈرگۈزىڭ."</string>
+<string name="keyguard_missing_sim_instructions_long">"SIMكارتىسى يىتىپ كەتتى ياكى ئوقۇلمىدى،SIMكارتىسىنى كىرگۇزۇڭ."</string>
+<string name="keyguard_permanent_disabled_sim_message_short">"ئىشلەتكىلى بولمايدىغان SIM كارتا."</string>
+<string name="keyguard_permanent_disabled_sim_instructions">"SIM كارتىسى ئشلىتشتىن توختىتىلدى،"\n"سىمسىز مۇلازىمەت بىلەن تەمىنلىگۇچى بىلەن ئالاقىلىشىپ يېڭى SIM كارتىسىگە ئېرىشىڭ."</string>
+<string name="keyguard_sim_locked_message">"كارتا قۇلۇپلاندىSIM"</string>
+<string name="keyguard_sim_puk_locked_message">"SIMكارتىغا PUK قۇلپىسى سېلىنغان."</string>
+<string name="keyguard_sim_unlock_progress_dialog_message">"SIM كارتا ئېچىلىۋاتىدۇ\u2026"</string>
+<string name="keyguard_accessibility_widget_changed">" %1$s دانە ئەپچىل د%2$dېتالى نىڭ%3$d"</string>
+<string name="keyguard_accessibility_add_widget">"ئەپچىل دېتاللارنى قوشۇش"</string>
+<string name="keyguard_accessibility_widget_empty_slot">"قۇرۇق"</string>
+<string name="keyguard_accessibility_unlock_area_expanded">"يېشىلگەن رايۇن كېڭەيتىلدى"</string>
+<string name="keyguard_accessibility_unlock_area_collapsed">"يېشىلگەن رايۇن قاتلاندى"</string>
+<string name="keyguard_accessibility_widget">"ئەپچىل دېتاللار<xliff:g id="widget_index">%1$s</xliff:g>"</string>
+<string name="keyguard_accessibility_user_selector">"ئىشلەتكۈچىنى تاللىغۇچ"</string>
+<string name="keyguard_accessibility_status">"ھالىتى"</string>
+<string name="keyguard_accessibility_camera">"كامېرا"</string>
+<string name="keygaurd_accessibility_media_controls">"ئۈن-سىن تىزگىنى"</string>
+<string name="keyguard_accessibility_widget_reorder_start">"ئەپچىل دېتاللارنى قايتا رەتكە سېلىش باشلاندى"</string>
+<string name="keyguard_accessibility_widget_reorder_end">"ئەپچىل دېتاللارنى قايتا رەتكە سېلىش ئاخىرلاشتى"</string>
+<string name="keyguard_accessibility_widget_deleted">"يۇيۇۋېتىلدى<xliff:g id="widget_index">%1$s</xliff:g>ئەپچىل دېتال"</string>
+<string name="keyguard_accessibility_expand_lock_area">"يېشىلگەن رايۇننى كېڭەيتىش"</string>
+<string name="keyguard_accessibility_slide_unlock">"سىيرىپ يېشىش"</string>
+<string name="keyguard_accessibility_pattern_unlock">"شەكىللىك يېشىش"</string>
+<string name="keyguard_accessibility_face_unlock">" چىراي ئارقىلىق يېشىش"</string>
+<string name="keyguard_accessibility_pin_unlock">"ئارقىلىق يېشىش PIN"</string>
+<string name="keyguard_accessibility_password_unlock">"مەخپىي نۇمۇر ئارقىلىق يېشىش"</string>
+<string name="keyguard_accessibility_pattern_area">"شەكىل رايۇنى"</string>
+<string name="keyguard_accessibility_slide_area">"سىيرىش رايۇن"</string>
+<string name="keyguard_accessibility_transport_prev_description">"ئالدىنقى ناخشا كۇنۇپىكىسى"</string>
+<string name="keyguard_accessibility_transport_next_description">"كېيىنكى ناخشا كۇنۇپكىسى"</string>
+<string name="keyguard_accessibility_transport_pause_description">"ۋاقتىنچە توختىتىش كۇنۇپكىسى"</string>
+<string name="keyguard_accessibility_transport_play_description">"قويۇش كۈنۈپكىسى"</string>
+<string name="keyguard_accessibility_transport_stop_description">"توختىتىش كونۇپكىسى"</string>
+<string name="keyguard_accessibility_transport_thumbs_up_description">"ياقتۇرۇش"</string>
+<string name="keyguard_accessibility_transport_thumbs_down_description">"ياقتۇرماسلىق"</string>
+<string name="keyguard_accessibility_transport_heart_description">"قەلب"</string>
+<string name="keyguard_accessibility_show_bouncer">"قۇلۇپنى ئېچىپ داۋاملاشتۇرۇڭ"</string>
+<string name="keyguard_accessibility_hide_bouncer">"قوزغىتىش ئەمەلدىن قالدۇرىلدى"</string>
+<string name="keyguard_accessibility_delete_widget_start">"نى تاشلىسىڭىز يۇيغىلى بولىدۇ<xliff:g id="widget_index">%1$s</xliff:g>"</string>
+<string name="keyguard_accessibility_delete_widget_end">"يۇيۇلمايدۇ<xliff:g id="widget_index">%1$s</xliff:g>"</string>
+<string name="password_keyboard_label_symbol_key">"\?123"</string>
+<string name="keyboardview_keycode_cancel">"4 x 3"</string>
+<string name="keyboardview_keycode_done">"تامام"</string>
+<string name="keyboardview_keycode_mode_change">"تۈر يېڭىلاندى"</string>
+<string name="description_target_unlock">"قولۇپنى ئېچىش"</string>
+<string name="description_target_camera">"كامېرا"</string>
+<string name="description_target_silent">"تىنچ"</string>
+<string name="description_target_soundon">"ئاۋازنى ئېچىش"</string>
+<string name="description_target_search">"ئىزدەش"</string>
+<string name="description_direction_up">"<xliff:g id="TARGET_DESCRIPTION">%s</xliff:g> نى ئۈستىگە يۆتكەش"</string>
+<string name="description_direction_down">"<xliff:g id="TARGET_DESCRIPTION">%s</xliff:g> نى تۆۋەنگە سېيرىلدۈرۈڭ."</string>
+<string name="description_direction_left">"<xliff:g id="TARGET_DESCRIPTION">%s</xliff:g> نى سولغا سېرىلدۈرۈڭ."</string>
+<string name="description_direction_right">"<xliff:g id="TARGET_DESCRIPTION">%s</xliff:g> نى ئوڭغا سۈرۈش."</string>
+<string name="user_switched">"<xliff:g id="name" example="Bob">%1$s</xliff:g>ھازىرقى ئىشلەتكۈچى "</string>
+<string name="kg_emergency_call_label">"جىددى تېلېفون"</string>
+<string name="kg_forgot_pattern_button_text">"شەكىلنى ئۇنتۇش"</string>
+<string name="kg_wrong_pattern">"شەكىل خاتا"</string>
+<string name="kg_wrong_password">"مەخپىي نۇمۇر خاتا"</string>
+<string name="kg_wrong_pin">"خاتاPIN"</string>
+<string name="kg_too_many_failed_attempts_countdown">"قايتا سىناش <xliff:g id="number">%d</xliff:g> سىكونت ئىچىدە."</string>
+<string name="kg_pattern_instructions">"شەكلىڭىزنى سىزىڭ"</string>
+<string name="kg_sim_pin_instructions">"نى كىرگۈزۈڭSIM PIN"</string>
+<string name="kg_pin_instructions">"نى كىرگۈزۈڭPIN"</string>
+<string name="kg_password_instructions">"مەخپىي نۇمۇرنى كىرگۈزۈڭ"</string>
+<string name="kg_puk_enter_puk_hint">"" نۇمۇرىنى كىرگۈزسىڭىز ئاندىن داۋاملىق ئىشلىتەلەيسىز.ئالاقىدار تەپسىلاتلارنى چۈشەنمەكچى بولسىڭىز يولغا قويغۇچى بىلەن ئالاقىلىشىڭ PUK كارتا ئىشلەشتىن توختىدى،سىز SIM" "</string>
+<string name="kg_puk_enter_pin_hint">" نۇمۇرىنى كىرگۈزۈڭPINمۇھتاج بولغان"</string>
+<string name="kg_enter_confirm_pin_hint">"نۇمۇرىنى مۇقىملاڭPINمۇھتاج بولغان"</string>
+<string name="kg_sim_unlock_progress_dialog_message">"SIM كارتا ئېچىلىۋاتىدۇ\u2026"</string>
+<string name="kg_invalid_sim_pin_hint">"4تىن 8گىچە ساندىن تۈۈلگەن PINشېفىرىنى كىرگۈزۈڭ."</string>
+<string name="kg_invalid_sim_puk_hint">"نۇمۇرى 8ياكى ئۇنىڭدىن يۇقىرى خانىلىق سانلاردىن تۈزۈلىشى كېرەكPUK"</string>
+<string name="kg_invalid_puk">"قايتىدىن توغرا بولغانPUKنۇمۇرىنى كىرگۈزۈڭ. خاتا كىرگۈزۈش قېتىم سانى زىيادە كۆپ بولساSIMكارتامەڭگۈ ئىشلەشتىن توختايدۇ""</string>
+<string name="kg_invalid_confirm_pin_hint" product="default">"نۇمۇرى ماسلاشمىدىPIN"</string>
+<string name="kg_login_too_many_attempts">"شەكىل مەشغۇلاتى كۆپ بولۇپ كەتتى!"</string>
+<string name="kg_login_instructions">"قۇلۇپنى ئاچماقچى بولسىڭىز،گۇگۇل ھېسابات بومۇرىڭىزغا كىرىڭ"</string>
+<string name="kg_login_username_hint">"ئابونت نامى(ئېلخەت)"</string>
+<string name="kg_login_password_hint">"شىفىر"</string>
+<string name="kg_login_submit_button">"تىزىملاش"</string>
+<string name="kg_login_invalid_input">"ئىناۋەتسىز ئىسىم ياكى پارول."</string>
+<string name="kg_login_account_recovery_hint">"ئابونت ئىسمىڭىز ۋە پارولىڭىزنى ئۇنتۇپ قالدىڭىزمۇ؟ \n <b> google.com/accounts/recovery </b> نى زىيارەت قىلىڭ"</string>
+<string name="kg_login_checking_password">"...ھېسابات نۇمۇرىنى تەكشۈرىۋاتىدۇ"</string>
+<string name="kg_too_many_failed_pin_attempts_dialog_message">"<xliff:g id="NUMBER_0">%d</xliff:g> قېتىم PIN نى خاتا كىرگۈزدىڭىز."\n\n" <xliff:g id="NUMBER_1">%d</xliff:g> سېكونتتىن كېيىن قايتا سىناپ كۆرۈڭ."</string>
+<string name="kg_too_many_failed_password_attempts_dialog_message">"<xliff:g id="NUMBER_0">%d</xliff:g> قېتىم كودنى خاتا كىرگۈزدىڭىز،"\n\n" <xliff:g id="NUMBER_1">%d</xliff:g> سېكونتتىن كېيىن قايتا سىناپ كۆرۈڭ."</string>
+<string name="kg_too_many_failed_pattern_attempts_dialog_message">"سىز قۇلۇپنى ئىچىش رەسمىنى خاتا بويدىڭىز<xliff:g id="number">%d</xliff:g> قىتىم. \n\n <xliff:g id="number">%d</xliff:g> مىنۇت ئىچىدە قايتا سىناپ بېقىڭ."</string>
+<string name="kg_failed_attempts_almost_at_wipe" product="tablet">"<xliff:g id="NUMBER_0">%d</xliff:g> قېتىم قۇلۇپ ئېچىشتا خاتالىق كۆرۈلدى. قايتا سىنىماقچى بولۇپ، <xliff:g id="NUMBER_1">%d</xliff:g> قېتىم يەنە مەغلۇپ بولسىڭىز، تەكشى يۈزلۈك كومپيۇتېر زاۋۇتتىن چىققان ھالەتكە قايتىدۇ، بارلىق ئابۇنت سانلىق مەلۇماتلىرى يوقىلىدۇ."</string>
+<string name="kg_failed_attempts_almost_at_wipe" product="default">"<xliff:g id="NUMBER_0">%d</xliff:g> قېتىم قۇلۇپ ئېچىشتا خاتالىق كۆرۈلدى. قايتا سىنىماقچى بولۇپ، <xliff:g id="NUMBER_1">%d</xliff:g> قېتىم يەنە مەغلۇپ بولسىڭىز، يانفون زاۋۇتتىن چىققان ھالەتكە قايتىدۇ. بارلىق ئابۇنت سانلىق مەلۇماتلىرى يوقىلىدۇ."</string>
+<string name="kg_failed_attempts_now_wiping" product="tablet">"<xliff:g id="NUMBER">%d</xliff:g> قۇلۇپ ئېچىشتا خاتالىق كۆرۈلدى. تەكشى يۈزلۈك كومپيۇتېر زاۋۇتتىن چىققان ھالەتكە قايتىدۇ."</string>
+<string name="kg_failed_attempts_now_wiping" product="default">"<xliff:g id="NUMBER">%d</xliff:g> قېتىم قۇلۇپ ئېچىشتا خاتالىق كۆرۈلدى. يانفون زاۋۇتتىن چىققان ھالەتكە قايتىدۇ."</string>
+<string name="kg_failed_attempts_almost_at_login" product="tablet">"سېكۇنتتىن كېيىن قايتا سىناڭ<xliff:g id="number">%d</xliff:g>سىز\n\n .قېتىملىق قايتا سىناشتىن كېيىن يەنىلا مەغلۇب بولسا، سىستىما سىزنىڭ ئېلىخەت ھېسابات نۇمۇرىڭىزنى ئىشلىتىپ يانفۇنىڭزنىڭ قۇلۇپىنى يېشىشنى تەلەپ قىلىدۇ<xliff:g id="number">%d</xliff:g> قېتىم قۇلۇپ يېشىش شەكلىنى خاتا كىرگۈزدىڭىز. ئەگەر داۋاملىق <xliff:g id="number">%d</xliff:g>سىز ئاللىبۇرۇن"</string>
+<string name="kg_failed_attempts_almost_at_login" product="default">"سېكۇنتتىن كېيىن قايتا سىناڭ<xliff:g id="number">%d</xliff:g>سىز\n\n .قېتىملىق قايتا سىناشتىن كېيىن يەنىلا مەغلۇب بولسا، سىستىما سىزنىڭ ئېلىخەت ھېسابات نۇمۇرىڭىزنى ئىشلىتىپ يانفۇنىڭزنىڭ قۇلۇپىنى يېشىشنى تەلەپ قىلىدۇ<xliff:g id="number">%d</xliff:g> قېتىم قۇلۇپ يېشىش شەكلىنى خاتا كىرگۈزدىڭىز. ئەگەر داۋاملىق <xliff:g id="number">%d</xliff:g>سىز ئاللىبۇرۇن"</string>
+<string name="kg_text_message_separator" product="default">"\u2014"</string>
+<string name="kg_reordering_delete_drop_target_text">"ئۈچۈرۈش"</string>
+<string name="kg_password_wrong_pin_code_pukked">"    "نۇمۇرىنى كۈرگۈزۈش خاتا بولدى. سىز ھازىر يولغا قويغۇچى بىلەن ئالاقىلىشىپ ئاندىن قۇلۇپنى ئاچالايسىزPINكارتىنىڭ SIM""</string>
+<plurals name="kg_password_wrong_pin_code">
+<item quantity="one">"    "<xliff:g id="number">%d</xliff:g>نۇمۇرىنى كۈرگۈزۈش خاتا بولدى. يولغا قويغۇچى بىلەن ئالاقىلىشىپ قۇلۇپنى ئېچىشتىن بۇرۇن ئاشقان سىناش قېتىم سانىڭىزPINكارتىنىڭ SIM""</item>
+<item quantity="other">"    "<xliff:g id="number">%d</xliff:g>نۇمۇرىنى كۈرگۈزۈش خاتا بولدى. سىزنىڭ ئاشقان سىناش قېتىم سانىڭىزPINكارتىنىڭ SIM""</item>
+</plurals>
+<string name="kg_password_wrong_puk_code_dead">"كارتا ئىناۋەتسىز. يولغا قويغۇچى بىلەن ئالاقىلىشىڭSIM"</string>
+<plurals name="kg_password_wrong_puk_code">
+<item quantity="one">"    "<xliff:g id="number">%d</xliff:g>كارتا مەڭگۈ ئىناۋەتسىز بولۇشتىن ئىلگىرى سىزنىڭ ئاشقان سىناش قېتىم سانىڭىز SIM. نۇمۇرىنى كۈرگۈزۈش خاتا بولدىPUKكارتىنىڭ SIM""</item>
+<item quantity="other">"    "<xliff:g id="number">%d</xliff:g>كارتا مەڭگۈ ئىناۋەتسىز بولۇشتىن ئىلگىرى سىزنىڭ ئاشقان سىناش قېتىم سانىڭىز SIM. نۇمۇرىنى كۈرگۈزۈش خاتا بولدىPUKكارتىنىىڭ SIM""</item>
+</plurals>
+<string name="kg_password_pin_failed">"!نۇمۇرىنى كىرگۈزۈش خاتا بولدىPIN"</string>
+<string name="kg_password_puk_failed">"!نۇمۇرىنى كىرگۈزۈش خاتا بولدىPUK"</string>
+<string name="kg_pin_accepted">"!كود نۇمۇرى قۇبۇل قىلىندى"</string>
+<string name="keyguard_transport_prev_description">"ئالدىنقى ناخشا كۇنۇپىكىسى"</string>
+<string name="keyguard_transport_next_description">"كېيىنكى ناخشا كۇنۇپكىسى"</string>
+<string name="keyguard_transport_pause_description">"ۋاقتىنچە توختىتىش كۇنۇپكىسى"</string>
+<string name="keyguard_transport_play_description">"قويۇش كۈنۈپكىسى"</string>
+<string name="keyguard_transport_stop_description">"توختىتىش كونۇپكىسى"</string>
+<string name="keyguard_carrier_default">"مۇلازىمەت يوق"</string>
+<string name="kg_emergency_call_no_service">"ئىشلەتكىلى بولىدىغان تور يوق"</string>
+<string name="missed_call">" %1دانە قوبۇل قىلىنمىغان تېلېفون$d"</string>
+<string name="unread_message">" %1پارچە ئوقۇلمىغان ئۇچۇر$d"</string>
+<string name="unread_messages">" %1پارچە ئوقۇلمىغان ئۇچۇرلار$d"</string>
+<string name="kg_sim_pin_verify_success">"نى دەلىللەش ئوڭۇشلۇق بولدىPIN"</string>
+</resources>

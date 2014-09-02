@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="kg_emergency_call_no_service">Немає доступних мереж</string>
+<string name="missed_call">"%1$d Пропущений виклик"</string>
+<string name="unread_message">"%1$d Непрочит. повід."</string>
+<string name="unread_messages">"%1$d непрочитаних повідомленнь"</string>
+<string name="kg_sim_pin_verify_success">"Перевірка PIN завершена"</string>
+</resources>

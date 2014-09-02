@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SPRD: Modify 20131126 Spreadst of Bug 244515 original lockscreen change by UUI @{ -->
+    <string name="description_target_call">Call</string>
+    <string name="description_target_sms">Sms</string>
+    <!-- @} -->
+    <!-- SPRD: Modify 20131127 Spreadst of Bug 244769 lockscreen show emergency call when no card no service @{ -->
+    <string name="kg_emergency_call_no_service">No available network</string>
+    <!-- @} -->
+    <!-- SPRD: Modify 20140120 Spreadst of Bug 266285 do not show unread message @{ -->
+    <string name="missed_call">%1$d Missed call</string>
+    <string name="unread_message">%1$d unread message</string>
+    <!-- SPRD: Modify 20140225 Spreadst of Bug 282069 display message when message count is 3 @{ -->
+    <string name="unread_messages">%1$d unread messages</string>
+    <!-- @} -->
+    <!-- SPRD: Modify 20140120 Spreadst of Bug 271459 no sim pin verify success top @{ -->
+    <string name="kg_sim_pin_verify_success">PIN verify success</string>
+    <!-- @} -->
+</resources>
