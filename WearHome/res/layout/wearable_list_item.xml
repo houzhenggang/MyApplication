@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <com.androidwear.home.view.CircledImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/action_icon_diameter"
+        android:layout_height="@dimen/action_icon_diameter"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        app:circle_src="@drawable/ic_orb_g"
+        app:circle_color="@color/cue_card_action_button"
+        app:circle_radius="@dimen/action_icon_radius" />
+
+    <TextView
+        android:id="@+id/action_text"
+        style="@style/WearableListItemText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/icon"
+        android:maxLines="2" />
+
+</merge>

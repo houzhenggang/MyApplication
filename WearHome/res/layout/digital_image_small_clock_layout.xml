@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alwaysDrawnWithCache="false"
+    android:fitsSystemWindows="true" >
+
+    <ImageView
+        android:id="@+id/number_images_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/watch_modi_pop_yellow_background"
+        android:src="@drawable/digital_image_clock_layers" />
+
+    <TextView
+        android:id="@+id/ampmMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/number_images_clock"
+        android:layout_alignTop="@id/number_images_clock"
+        android:layout_marginLeft="@dimen/small_pop_ampm_margin_left"
+        android:layout_marginTop="@dimen/small_pop_ampm_margin_top"
+        android:fontFamily="sans-serif"
+        android:padding="0.0dip"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/small_pop_ampm_text"
+        android:textStyle="bold" />
+
+</merge>

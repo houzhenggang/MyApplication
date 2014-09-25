@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:watchFace="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <com.androidwear.home.watchfaces.ustwowatchfaces2.customstyle.DualTextClock
+        android:id="@+id/dual_text_clock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        watchFace:ampmTextColor="@color/watch_white"
+        watchFace:background="@drawable/style_bg"
+        watchFace:clockTextColor="@color/watch_white"
+        watchFace:dayOfWeekAndMonthVisible="false"
+        watchFace:dayWeekTextColor="@color/watch_white"
+        watchFace:smallSizeStyle="true" />
+
+</LinearLayout>

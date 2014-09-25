@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_hardwareAccelerated">true</bool>
+    <bool name="config_largeHeap">false</bool>
+    <integer name="config_allAppsBatchLoadDelay">0</integer>
+    <integer name="config_allAppsBatchSize">0</integer>
+    <integer name="action_text_faded_alpha">40</integer>
+</resources>

@@ -1,0 +1,18 @@
+<com.androidwear.home.watchfaces.DigitalClockView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/digital_background"
+    android:background="@drawable/bg_home_day"
+    >
+
+    <TextView
+        android:id="@+id/digital_text"
+        android:layout_marginLeft="@dimen/digital_text_marginleft"
+        android:layout_marginTop="@dimen/digital_text_margintop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Digital_text"
+        />
+
+</com.androidwear.home.watchfaces.DigitalClockView>

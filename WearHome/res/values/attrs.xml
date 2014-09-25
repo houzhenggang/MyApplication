@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircledImageView">
+        <attr name="circle_color" format="color" />
+        <attr name="circle_radius" format="dimension" />
+        <attr name="circle_radius_pressed" format="dimension" />
+        <attr name="circle_border_width" format="dimension" />
+        <attr name="circle_border_color" format="color" />
+        <attr name="circle_padding" format="dimension" />
+        <attr name="circle_shadow_width" format="dimension" />
+        <attr name="circle_src" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="watchFace">
+        <attr name="smallSizeStyle" format="boolean" />
+        <attr name="subSizeStyle" format="boolean" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="clockTextColor" format="reference|color" />
+        <attr name="ampmTextColor" format="reference|color" />
+        <attr name="dayWeekTextColor" format="reference|color" />
+        <attr name="dayWeekBackground" format="reference" />
+        <attr name="dayWeekImageTheme" format="reference" />
+        <attr name="dayMonthImageTheme" format="reference" />
+        <attr name="clockTextSize" format="dimension" />
+        <attr name="ampmTextSize" format="dimension" />
+        <attr name="dayWeekTextSize" format="dimension" />
+        <attr name="dial" format="reference" />
+        <attr name="hand_hour" format="reference" />
+        <attr name="hand_minute" format="reference" />
+        <attr name="hand_second" format="reference" />
+        <attr name="imageClockTheme" format="reference" />
+        <attr name="imageClockAmbientTheme" format="reference" />
+        <attr name="analogClockTheme" format="reference" />
+        <attr name="analogClockAmbientTheme" format="reference" />
+        <attr name="x_pos" format="integer" />
+        <attr name="y_pos" format="integer" />
+        <attr name="x_position" format="dimension" />
+        <attr name="y_position" format="dimension" />
+        <attr name="dayWeekFormat" format="string" />
+        <attr name="clock_marginLeft" format="dimension" />
+        <attr name="clock_marginTop" format="dimension" />
+        <attr name="clock_marginRight" format="dimension" />
+        <attr name="clock_marginBottom" format="dimension" />
+        <attr name="ampm_marginLeft" format="dimension" />
+        <attr name="ampm_marginTop" format="dimension" />
+        <attr name="ampm_marginRight" format="dimension" />
+        <attr name="ampm_marginBottom" format="dimension" />
+        <attr name="dayWeek_marginLeft" format="dimension" />
+        <attr name="dayWeek_marginTop" format="dimension" />
+        <attr name="dayWeek_marginRight" format="dimension" />
+        <attr name="dayWeek_marginBottom" format="dimension" />
+        <attr name="background" format="reference" />
+        <attr name="backgroundColor" format="reference|color" />
+        <attr name="subDigitalClockVisible" format="boolean" />
+        <attr name="dayOfWeekAndMonthVisible" format="boolean" />
+    </declare-styleable>
+
+</resources>

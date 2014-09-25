@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.androidwear.home.watchfaces.WatchFaceOptionWrapper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/watchface_picker_bg_color" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="32.0dip" >
+
+        <ImageView
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <View
+            android:id="@+id/peeking_card"
+            android:layout_width="fill_parent"
+            android:layout_height="64.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/cw_system_margin_horizontal"
+            android:layout_marginRight="@dimen/cw_system_margin_horizontal"
+            android:background="#ff555555" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/WatchFaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" />
+
+</com.androidwear.home.watchfaces.WatchFaceOptionWrapper>

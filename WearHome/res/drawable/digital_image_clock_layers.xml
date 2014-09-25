@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/hour_first">
+        <bitmap android:gravity="center" android:src="@drawable/watch_modi_num_01_0_pink" />
+    </item>
+    <item android:id="@+id/hour_second">
+        <bitmap android:gravity="center" android:src="@drawable/watch_modi_num_02_1_violet" />
+    </item>
+    <item android:id="@+id/minute_first">
+        <bitmap android:gravity="center" android:src="@drawable/watch_modi_num_03_2_green" />
+    </item>
+    <item android:id="@+id/minute_second">
+        <bitmap android:gravity="center" android:src="@drawable/watch_modi_num_04_3_blue" />
+    </item>
+</layer-list>

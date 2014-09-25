@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:clickable="true" >
+
+    <android.support.wearable.view.WearableListView
+        android:id="@+id/voice_action_list_field"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_light"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:paddingLeft="@dimen/action_list_margin_left"
+        android:paddingRight="@dimen/action_list_margin_right"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/field_name"
+        style="@style/VoicePlatePrompt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/voice_plate_field_name_online_height"
+        android:background="@color/cw_blue"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/cue_card_transcription_left_padding"
+        android:paddingRight="64.0dip"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/header_icon"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:visibility="gone" />
+
+    <com.androidwear.home.view.SoundLevelImageView
+        android:id="@+id/mic_icon"
+        android:layout_width="@dimen/orb_diameter_max"
+        android:layout_height="@dimen/orb_diameter_max"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:layout_marginRight="@dimen/orb_margin_right"
+        android:layout_marginTop="@dimen/orb_margin_top"
+        app:circle_src="@drawable/ic_orb_g"
+        app:circle_color="@color/orb_active"
+        app:circle_radius="@dimen/orb_radius_min" />
+
+    <TextView
+        android:id="@+id/transcription"
+        style="@style/TranscriptionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cue_card_transcription_bottom_margin"
+        android:maxLines="3"
+        android:minLines="3" />
+
+    <ImageView
+        android:id="@+id/top_chevron"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8.0dip"
+        android:src="@drawable/ic_arrow_down"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/bottom_chevron"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8.0dip"
+        android:src="@drawable/ic_arrow_up"
+        android:visibility="gone" />
+</RelativeLayout>

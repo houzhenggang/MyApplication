@@ -1,0 +1,80 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Digital_text">
+        <item name="android:textSize">@dimen/digital_text_size</item>
+        <item name="android:textColor">@color/digital_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Wearable.Small" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/primary_text_light</item>
+    </style>
+     <style name="TextView.Small" parent="@android:style/Widget.Holo.Light">
+        <item name="android:textAppearance">@style/TextAppearance.Wearable.Small</item>
+    </style>
+    <style name="TextView.Small.Light" parent="@style/TextView.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Wearable.Small</item>
+    </style>
+    <style name="WearableListItemText" parent="@style/TextView.Small.Light">
+        <item name="android:textSize">@dimen/wearable_list_item_text_size</item>
+    </style>
+    <style name="VoicePlatePrompt">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/cw_white</item>
+    </style>
+    <style name="TextAppearance.Wearable.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/primary_text_light</item>
+    </style>
+    <style name="TextView.Medium" parent="@android:style/Widget.Holo.Light">
+        <item name="android:textAppearance">@style/TextAppearance.Wearable.Medium</item>
+    </style>
+    <style name="TextView.Medium.Light" parent="@style/TextView.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Wearable.Medium</item>
+    </style>
+    <style name="TranscriptionText" parent="@style/TextView.Medium.Light">
+        <item name="android:textColor">@color/secondary_text_light</item>
+        <item name="android:paddingLeft">@dimen/cue_card_transcription_left_padding</item>
+        <item name="android:paddingRight">@dimen/cue_card_transcription_right_padding</item>
+    </style>
+    
+    <!-- for statsu bar begin -->
+    <style name="TextAppearance.StatusBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textColor">@color/cw_white</item>
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="TextAppearance.StatusBar.Shadow" parent="TextAppearance.StatusBar">
+        <item name="android:shadowColor">@color/secondary_status_bar_shadow_color</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+    <!-- for status bar end -->
+    <style name="WatchFaceName">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/cw_white</item>
+        <item name="android:shadowColor">#dd000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+</resources>

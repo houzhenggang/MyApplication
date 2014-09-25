@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/secondary_status_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/cw_topbar_height_circular" >
+
+    <ImageView
+        android:id="@+id/zen_mode_toggle_icon"
+        android:src="@drawable/ic_sys_bell_large"
+        android:layout_gravity="top|center"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_marginTop="16.0dip"
+        android:contentDescription="@string/empty" />
+
+    <TextView
+        android:id="@+id/zen_mode_toggle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="16.0dip"
+        android:alpha="0.0"
+        android:text="@string/mute"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.StatusBar"/>
+
+    <TextClock
+        android:id="@+id/status_bar_date"
+        android:gravity="top"
+        android:layout_gravity="top|left|center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/clock_left_offset_circular"
+        android:layout_marginTop="64.0dip"
+        android:textAppearance="@style/TextAppearance.StatusBar.Shadow"/>
+
+    <ImageView
+        android:id="@+id/status_bar_battery_icon"
+        android:src="@drawable/ic_sys_battery"
+        android:layout_gravity="top|right|center"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginRight="56.0dip"
+        android:layout_marginTop="68.0dip"
+        android:contentDescription="@string/empty" />
+
+    <TextView
+        android:id="@+id/status_bar_battery"
+        android:gravity="center"
+        android:layout_gravity="top|right|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginTop="64.0dip"
+        android:textAppearance="@style/TextAppearance.StatusBar.Shadow"/>
+
+</FrameLayout>

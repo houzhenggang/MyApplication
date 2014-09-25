@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.androidwear.home.view.SwipeDismissFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <android.support.wearable.view.WearableListView
+        android:id="@+id/app_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_light"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:scrollbars="none" />
+
+</com.androidwear.home.view.SwipeDismissFrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/clock_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/fg_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF000000"/>
+
+    <ImageView
+        android:id="@+id/circle_view"
+        android:layout_width="@dimen/circle_view_raduis"
+        android:layout_height="@dimen/circle_view_raduis"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</RelativeLayout>

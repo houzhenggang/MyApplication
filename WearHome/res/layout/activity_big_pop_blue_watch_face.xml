@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:watchFace="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <com.androidwear.home.watchfaces.ustwowatchfaces2.customstyle.DigitalImageClock
+        android:id="@+id/digital_image_clock"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        watchFace:imageClockAmbientTheme="@array/watch_modi_theme_pop_black"
+        watchFace:imageClockTheme="@array/watch_modi_theme_pop_blue" />
+
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidwear.home"
+    android:sharedUserId="com.androidwear.home"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:name=".HomeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.wearable.app.HIDE_IN_MENU"
+                android:value="false" >
+            </meta-data>
+        </activity>
+
+        <receiver android:name=".NetWorkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.androidwear.home.AmbientMode"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher" >
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacedashboard.WatchFaceDashboard"
+            android:enabled="true"
+            android:label="@string/watchface_dashboard_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_dashboard_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacealuminum.WatchFaceAluminum"
+            android:enabled="true"
+            android:label="@string/watchface_aluminum_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_aluminum_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfaceaviator.WatchFaceAviator"
+            android:enabled="true"
+            android:label="@string/watchface_aviator_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_aviator_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacecoordinates.WatchFaceCoordinates"
+            android:enabled="true"
+            android:label="@string/watchface_coordinates_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_coordinates_square_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacedigitalog.WatchFaceDigitalog"
+            android:enabled="true"
+            android:label="@string/watchface_digitalog_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_digitalog_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacegrid.WatchFaceGrid"
+            android:enabled="true"
+            android:label="@string/watchface_grid_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_grid_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacemoon.WatchFaceMoon"
+            android:enabled="true"
+            android:label="@string/watchface_moon_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_moon_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacepolar.WatchFacePolar"
+            android:enabled="true"
+            android:label="@string/watchface_polar_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_polar_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacereveal.WatchFaceReveal"
+            android:enabled="true"
+            android:label="@string/watchface_reveal_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_reveal_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.watchfacerings.WatchFaceRings"
+            android:enabled="true"
+            android:label="@string/watchface_rings_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/watchface_rings_preview" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.SmallStyleWatchFace"
+            android:enabled="true"
+            android:label="@string/moire_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/black_digital_sub_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.BigBlackTextWatchFace"
+            android:exported="true"
+            android:label="@string/digital_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/black_digital_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.BigBlackAnalogThirdWatchFace"
+            android:exported="true"
+            android:label="@string/helvetia_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/analogue_03_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.BigBlackAnalogFirstWatchFace"
+            android:exported="true"
+            android:label="@string/dieter_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/analogue_01_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.BigBlueWatchFace"
+            android:exported="true"
+            android:label="@string/aurora_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/blue_digital_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.SmallBlueWatchFace"
+            android:exported="true"
+            android:label="@string/min_aurora_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/blue_digital_sub_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.BigPopYellowWatchFace"
+            android:exported="true"
+            android:label="@string/pop_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/pop_yellow_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.SmallPopYellowWatchFace"
+            android:exported="true"
+            android:label="@string/mini_pop_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/pop_yellow_sub_01_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.SmallPopYellowAnalogWatchFace"
+            android:exported="true"
+            android:label="@string/analog_pop_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/pop_yellow_sub_02_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.BigPopBlueWatchFace"
+            android:exported="true"
+            android:label="@string/neon_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/pop_blue_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.SmallPopBlueWatchFace"
+            android:exported="true"
+            android:label="@string/mini_neon_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/pop_blue_sub_01_clock_preview" />
+        </activity>
+        <activity
+            android:name=".watchfaces.ustwowatchfaces2.customstyle.watchface.SmallPopBlueAnalogWatchFace"
+            android:exported="true"
+            android:label="@string/analog_neon_name"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.androidwear.home.category.HOME_BACKGROUND" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.clockwork.home.preview"
+                android:resource="@drawable/pop_blue_sub_02_clock_preview" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

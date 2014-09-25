@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alwaysDrawnWithCache="false"
+    android:fitsSystemWindows="true" >
+
+    <ImageView
+        android:id="@+id/number_images_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/watch_modi_pop_yellow_background"
+        android:src="@drawable/digital_image_clock_layers" />
+
+    <TextView
+        android:id="@+id/ampmMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/number_images_clock"
+        android:layout_alignTop="@id/number_images_clock"
+        android:layout_marginLeft="@dimen/modi_ampm_margin_left"
+        android:layout_marginTop="@dimen/modi_ampm_margin_top"
+        android:fontFamily="sans-serif"
+        android:padding="0.0dip"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/clock_pop_ampm_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subDayOfWeek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/modi_sub_clock_margin_left"
+        android:layout_marginTop="@dimen/modi_sub_clock_margin_top"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:padding="0.0dip"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/modi_sub_clock_text" />
+
+    <TextView
+        android:id="@+id/subMonthAndDay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/modi_sub_clock_margin_left"
+        android:layout_marginTop="@dimen/modi_sub_clock_day_text_margin"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:padding="0.0dip"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/modi_sub_clock_day_text" />
+
+</merge>

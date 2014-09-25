@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="battery_level_1">30</integer>
+    <integer name="battery_level_2">50</integer>
+    <integer name="battery_level_3">90</integer>
+    <integer name="battery_level_4">100</integer>
+</resources>

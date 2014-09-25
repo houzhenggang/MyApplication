@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alwaysDrawnWithCache="false"
+    android:fitsSystemWindows="true" >
+
+    <ImageView
+        android:id="@+id/backgroundimage"
+        android:layout_width="@dimen/clock_width"
+        android:layout_height="@dimen/clock_height"
+        android:src="@drawable/watch_blue_bg" />
+
+    <TextView
+        android:id="@+id/clock_hour"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/clock_hour_text_margin_left"
+        android:layout_marginTop="@dimen/clock_hour_text_margin_top"
+        android:fontFamily="sans-serif"
+        android:padding="0.0dip"
+        android:shadowColor="#a5000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="3.0"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/dual_clock_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clock_minute"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/clock_minute_text_margin_left"
+        android:layout_marginTop="@dimen/clock_minute_text_margin_top"
+        android:fontFamily="sans-serif-thin"
+        android:padding="0.0dip"
+        android:shadowColor="#a5000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="3.0"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/dual_clock_text" />
+
+    <TextView
+        android:id="@+id/ampmMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dual_clock_ampm_text_margin_left"
+        android:layout_marginTop="@dimen/dual_clock_ampm_text_margin_top"
+        android:fontFamily="sans-serif"
+        android:padding="0.0dip"
+        android:shadowColor="#a5000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="3.0"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/dual_clock_ampm_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/monthAndDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dual_clock_month_text_margin_left"
+        android:layout_marginTop="@dimen/dual_clock_month_text_margin_top"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#a5000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="3.0"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/dual_clock_month_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dayOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dual_clock_day_text_margin_left"
+        android:layout_marginTop="@dimen/dual_clock_day_text_margin_top"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#a5000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="3.0"
+        android:textColor="@color/watch_white"
+        android:textSize="@dimen/dual_clock_day_text"
+        android:textStyle="bold" />
+
+</merge>

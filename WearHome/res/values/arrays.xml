@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="watch_black_analog1_theme">
+        <item>@array/watch_black_analog1_hand</item>
+        <item>@array/watch_black_analog1_dayofmonth</item>
+    </array>
+    <array name="watch_black_analog1_hand">
+        <item>@drawable/black_01_bg</item>
+        <item>@drawable/black_01_hour</item>
+        <item>@drawable/black_01_minute</item>
+        <item>@drawable/black_01_second</item>
+    </array>
+    <array name="watch_black_analog1_dayofmonth">
+        <item>@drawable/black_01_date_01</item>
+        <item>@drawable/black_01_date_02</item>
+        <item>@drawable/black_01_date_03</item>
+        <item>@drawable/black_01_date_04</item>
+        <item>@drawable/black_01_date_05</item>
+        <item>@drawable/black_01_date_06</item>
+        <item>@drawable/black_01_date_07</item>
+        <item>@drawable/black_01_date_08</item>
+        <item>@drawable/black_01_date_09</item>
+        <item>@drawable/black_01_date_10</item>
+        <item>@drawable/black_01_date_11</item>
+        <item>@drawable/black_01_date_12</item>
+        <item>@drawable/black_01_date_13</item>
+        <item>@drawable/black_01_date_14</item>
+        <item>@drawable/black_01_date_15</item>
+        <item>@drawable/black_01_date_16</item>
+        <item>@drawable/black_01_date_17</item>
+        <item>@drawable/black_01_date_18</item>
+        <item>@drawable/black_01_date_19</item>
+        <item>@drawable/black_01_date_20</item>
+        <item>@drawable/black_01_date_21</item>
+        <item>@drawable/black_01_date_22</item>
+        <item>@drawable/black_01_date_23</item>
+        <item>@drawable/black_01_date_24</item>
+        <item>@drawable/black_01_date_25</item>
+        <item>@drawable/black_01_date_26</item>
+        <item>@drawable/black_01_date_27</item>
+        <item>@drawable/black_01_date_28</item>
+        <item>@drawable/black_01_date_29</item>
+        <item>@drawable/black_01_date_30</item>
+        <item>@drawable/black_01_date_31</item>
+    </array>
+    <array name="watch_black_analog1_ambient_theme">
+        <item>@array/watch_black_analog1_hand_ambient</item>
+        <item>@array/watch_black_analog1_dayofmonth_ambient</item>
+    </array>
+    <array name="watch_black_analog1_hand_ambient">
+        <item>@drawable/black_01_bg_ambient</item>
+        <item>@drawable/black_01_hour_ambient</item>
+        <item>@drawable/black_01_minute_ambient</item>
+    </array>
+    <array name="watch_black_analog1_dayofmonth_ambient">
+        <item>@drawable/black_01_date_01_ambient</item>
+        <item>@drawable/black_01_date_02_ambient</item>
+        <item>@drawable/black_01_date_03_ambient</item>
+        <item>@drawable/black_01_date_04_ambient</item>
+        <item>@drawable/black_01_date_05_ambient</item>
+        <item>@drawable/black_01_date_06_ambient</item>
+        <item>@drawable/black_01_date_07_ambient</item>
+        <item>@drawable/black_01_date_08_ambient</item>
+        <item>@drawable/black_01_date_09_ambient</item>
+        <item>@drawable/black_01_date_10_ambient</item>
+        <item>@drawable/black_01_date_11_ambient</item>
+        <item>@drawable/black_01_date_12_ambient</item>
+        <item>@drawable/black_01_date_13_ambient</item>
+        <item>@drawable/black_01_date_14_ambient</item>
+        <item>@drawable/black_01_date_15_ambient</item>
+        <item>@drawable/black_01_date_16_ambient</item>
+        <item>@drawable/black_01_date_17_ambient</item>
+        <item>@drawable/black_01_date_18_ambient</item>
+        <item>@drawable/black_01_date_19_ambient</item>
+        <item>@drawable/black_01_date_20_ambient</item>
+        <item>@drawable/black_01_date_21_ambient</item>
+        <item>@drawable/black_01_date_22_ambient</item>
+        <item>@drawable/black_01_date_23_ambient</item>
+        <item>@drawable/black_01_date_24_ambient</item>
+        <item>@drawable/black_01_date_25_ambient</item>
+        <item>@drawable/black_01_date_26_ambient</item>
+        <item>@drawable/black_01_date_27_ambient</item>
+        <item>@drawable/black_01_date_28_ambient</item>
+        <item>@drawable/black_01_date_29_ambient</item>
+        <item>@drawable/black_01_date_30_ambient</item>
+        <item>@drawable/black_01_date_31_ambient</item>
+    </array>
+
+    <string-array name="watch_black_analog3_theme">
+        <item>@array/watch_black_analog3_hand</item>
+    </string-array>
+
+    <array name="watch_black_analog3_hand">
+        <item>@drawable/black_03_bg</item>
+        <item>@drawable/black_03_hour</item>
+        <item>@drawable/black_03_minute</item>
+        <item>@drawable/black_03_second</item>
+    </array>
+
+    <string-array name="watch_black_analog3_ambient_theme">
+        <item>@array/watch_black_analog3_hand_ambient</item>
+    </string-array>
+
+    <array name="watch_black_analog3_hand_ambient">
+        <item>@drawable/black_03_bg_ambient</item>
+        <item>@drawable/black_03_hour_ambient</item>
+        <item>@drawable/black_03_minute_ambient</item>
+    </array>
+    <array name="watch_modi_theme_pop_blue">
+        <item>@array/watch_modi_theme_pop_blue_h1</item>
+        <item>@array/watch_modi_theme_pop_blue_h2</item>
+        <item>@array/watch_modi_theme_pop_blue_m1</item>
+        <item>@array/watch_modi_theme_pop_blue_m2</item>
+        <item>@array/watch_modi_theme_pop_blue_colors</item>
+    </array>
+    <array name="watch_modi_theme_pop_blue_h1">
+        <item>@drawable/watch_modi_num_pop_blue_01_0_green</item>
+        <item>@drawable/watch_modi_num_pop_blue_01_1_green</item>
+        <item>@drawable/watch_modi_num_pop_blue_01_2_green</item>
+    </array>
+    <array name="watch_modi_theme_pop_blue_h2">
+        <item>@drawable/watch_modi_num_pop_blue_02_0_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_1_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_2_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_3_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_4_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_5_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_6_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_7_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_8_violet</item>
+        <item>@drawable/watch_modi_num_pop_blue_02_9_violet</item>
+    </array>
+    <array name="watch_modi_theme_pop_blue_m1">
+        <item>@drawable/watch_modi_num_pop_blue_03_0_magenta</item>
+        <item>@drawable/watch_modi_num_pop_blue_03_1_magenta</item>
+        <item>@drawable/watch_modi_num_pop_blue_03_2_magenta</item>
+        <item>@drawable/watch_modi_num_pop_blue_03_3_magenta</item>
+        <item>@drawable/watch_modi_num_pop_blue_03_4_magenta</item>
+        <item>@drawable/watch_modi_num_pop_blue_03_5_magenta</item>
+    </array>
+    <array name="watch_modi_theme_pop_blue_m2">
+        <item>@drawable/watch_modi_num_pop_blue_04_0_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_1_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_2_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_3_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_4_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_5_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_6_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_7_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_8_pink</item>
+        <item>@drawable/watch_modi_num_pop_blue_04_9_pink</item>
+    </array>
+    <array name="watch_modi_theme_pop_blue_colors">
+        <item>@color/watch_modi_pop_blue_background</item>
+        <item>@color/watch_white</item>
+    </array>
+
+    <string-array name="watch_pop_blue_analog_sub2_theme">
+        <item>@array/watch_pop_blue_analog_sub2_hand</item>
+    </string-array>
+
+    <array name="watch_pop_blue_analog_sub2_hand">
+        <item>@drawable/watch_modi_blue_rect_sub_clock</item>
+        <item>@drawable/watch_modi_blue_rect_sub_hour</item>
+        <item>@drawable/watch_modi_blue_rect_sub_minute</item>
+    </array>
+
+    <string-array name="watch_pop_blue_analog_sub2_ambient_theme">
+        <item>@array/watch_pop_blue_analog_sub2_hand_ambient</item>
+    </string-array>
+
+    <array name="watch_pop_blue_analog_sub2_hand_ambient">
+        <item>@drawable/watch_modi_blue_rect_sub_clock</item>
+        <item>@drawable/watch_modi_sub_hour_ambient</item>
+        <item>@drawable/watch_modi_sub_minute_ambient</item>
+    </array>
+    <array name="watch_pop_blue_sub_theme">
+        <item>@array/watch_pop_blue_h1_sub_theme</item>
+        <item>@array/watch_pop_blue_h2_sub_theme</item>
+        <item>@array/watch_pop_blue_m1_sub_theme</item>
+        <item>@array/watch_pop_blue_m2_sub_theme</item>
+        <item>@array/watch_pop_blue_colors_sub_theme</item>
+    </array>
+    <array name="watch_pop_blue_h1_sub_theme">
+        <item>@drawable/watch_modi_pop_blue_sub_num_01_0_green</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_01_1_green</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_01_2_green</item>
+    </array>
+    <array name="watch_pop_blue_h2_sub_theme">
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_0_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_1_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_2_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_3_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_4_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_5_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_6_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_7_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_8_violet</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_02_9_violet</item>
+    </array>
+    <array name="watch_pop_blue_m1_sub_theme">
+        <item>@drawable/watch_modi_pop_blue_sub_num_03_0_magenta</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_03_1_magenta</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_03_2_magenta</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_03_3_magenta</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_03_4_magenta</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_03_5_magenta</item>
+    </array>
+    <array name="watch_pop_blue_m2_sub_theme">
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_0_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_1_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_2_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_3_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_4_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_5_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_6_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_7_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_8_pink</item>
+        <item>@drawable/watch_modi_pop_blue_sub_num_04_9_pink</item>
+    </array>
+    <array name="watch_pop_blue_colors_sub_theme">
+        <item>@color/watch_modi_pop_blue_background</item>
+        <item>@color/watch_white</item>
+    </array>
+    <array name="watch_modi_theme_pop_yellow">
+        <item>@array/watch_modi_theme_pop_yellow_h1</item>
+        <item>@array/watch_modi_theme_pop_yellow_h2</item>
+        <item>@array/watch_modi_theme_pop_yellow_m1</item>
+        <item>@array/watch_modi_theme_pop_yellow_m2</item>
+        <item>@array/watch_modi_theme_pop_yellow_colors</item>
+    </array>
+    <array name="watch_modi_theme_pop_yellow_h1">
+        <item>@drawable/watch_modi_num_01_0_pink</item>
+        <item>@drawable/watch_modi_num_01_1_pink</item>
+        <item>@drawable/watch_modi_num_01_2_pink</item>
+    </array>
+    <array name="watch_modi_theme_pop_yellow_h2">
+        <item>@drawable/watch_modi_num_02_0_violet</item>
+        <item>@drawable/watch_modi_num_02_1_violet</item>
+        <item>@drawable/watch_modi_num_02_2_violet</item>
+        <item>@drawable/watch_modi_num_02_3_violet</item>
+        <item>@drawable/watch_modi_num_02_4_violet</item>
+        <item>@drawable/watch_modi_num_02_5_violet</item>
+        <item>@drawable/watch_modi_num_02_6_violet</item>
+        <item>@drawable/watch_modi_num_02_7_violet</item>
+        <item>@drawable/watch_modi_num_02_8_violet</item>
+        <item>@drawable/watch_modi_num_02_9_violet</item>
+    </array>
+    <array name="watch_modi_theme_pop_yellow_m1">
+        <item>@drawable/watch_modi_num_03_0_green</item>
+        <item>@drawable/watch_modi_num_03_1_green</item>
+        <item>@drawable/watch_modi_num_03_2_green</item>
+        <item>@drawable/watch_modi_num_03_3_green</item>
+        <item>@drawable/watch_modi_num_03_4_green</item>
+        <item>@drawable/watch_modi_num_03_5_green</item>
+    </array>
+    <array name="watch_modi_theme_pop_yellow_m2">
+        <item>@drawable/watch_modi_num_04_0_blue</item>
+        <item>@drawable/watch_modi_num_04_1_blue</item>
+        <item>@drawable/watch_modi_num_04_2_blue</item>
+        <item>@drawable/watch_modi_num_04_3_blue</item>
+        <item>@drawable/watch_modi_num_04_4_blue</item>
+        <item>@drawable/watch_modi_num_04_5_blue</item>
+        <item>@drawable/watch_modi_num_04_6_blue</item>
+        <item>@drawable/watch_modi_num_04_7_blue</item>
+        <item>@drawable/watch_modi_num_04_8_blue</item>
+        <item>@drawable/watch_modi_num_04_9_blue</item>
+    </array>
+    <array name="watch_modi_theme_pop_yellow_colors">
+        <item>@color/watch_modi_pop_yellow_background</item>
+        <item>@color/watch_white</item>
+    </array>
+    <array name="watch_modi_theme_pop_black">
+        <item>@array/watch_modi_theme_pop_black_h1</item>
+        <item>@array/watch_modi_theme_pop_black_h2</item>
+        <item>@array/watch_modi_theme_pop_black_m1</item>
+        <item>@array/watch_modi_theme_pop_black_m2</item>
+        <item>@array/watch_modi_theme_pop_black_colors</item>
+    </array>
+    <array name="watch_modi_theme_pop_black_h1">
+        <item>@drawable/watch_modi_num_pop_black_01_0</item>
+        <item>@drawable/watch_modi_num_pop_black_01_1</item>
+        <item>@drawable/watch_modi_num_pop_black_01_2</item>
+    </array>
+    <array name="watch_modi_theme_pop_black_h2">
+        <item>@drawable/watch_modi_num_pop_black_02_0</item>
+        <item>@drawable/watch_modi_num_pop_black_02_1</item>
+        <item>@drawable/watch_modi_num_pop_black_02_2</item>
+        <item>@drawable/watch_modi_num_pop_black_02_3</item>
+        <item>@drawable/watch_modi_num_pop_black_02_4</item>
+        <item>@drawable/watch_modi_num_pop_black_02_5</item>
+        <item>@drawable/watch_modi_num_pop_black_02_6</item>
+        <item>@drawable/watch_modi_num_pop_black_02_7</item>
+        <item>@drawable/watch_modi_num_pop_black_02_8</item>
+        <item>@drawable/watch_modi_num_pop_black_02_9</item>
+    </array>
+    <array name="watch_modi_theme_pop_black_m1">
+        <item>@drawable/watch_modi_num_pop_black_03_0</item>
+        <item>@drawable/watch_modi_num_pop_black_03_1</item>
+        <item>@drawable/watch_modi_num_pop_black_03_2</item>
+        <item>@drawable/watch_modi_num_pop_black_03_3</item>
+        <item>@drawable/watch_modi_num_pop_black_03_4</item>
+        <item>@drawable/watch_modi_num_pop_black_03_5</item>
+    </array>
+    <array name="watch_modi_theme_pop_black_m2">
+        <item>@drawable/watch_modi_num_pop_black_04_0</item>
+        <item>@drawable/watch_modi_num_pop_black_04_1</item>
+        <item>@drawable/watch_modi_num_pop_black_04_2</item>
+        <item>@drawable/watch_modi_num_pop_black_04_3</item>
+        <item>@drawable/watch_modi_num_pop_black_04_4</item>
+        <item>@drawable/watch_modi_num_pop_black_04_5</item>
+        <item>@drawable/watch_modi_num_pop_black_04_6</item>
+        <item>@drawable/watch_modi_num_pop_black_04_7</item>
+        <item>@drawable/watch_modi_num_pop_black_04_8</item>
+        <item>@drawable/watch_modi_num_pop_black_04_9</item>
+    </array>
+    <array name="watch_modi_theme_pop_black_colors">
+        <item>@color/watch_modi_pop_black_background</item>
+        <item>@color/watch_white</item>
+    </array>
+
+    <string-array name="watch_pop_analog_sub2_theme">
+        <item>@array/watch_pop_analog_sub2_hand</item>
+    </string-array>
+
+    <array name="watch_pop_analog_sub2_hand">
+        <item>@drawable/watch_modi_sub_clock</item>
+        <item>@drawable/watch_modi_sub_hour</item>
+        <item>@drawable/watch_modi_sub_minute</item>
+    </array>
+
+    <string-array name="watch_pop_analog_sub2_ambient_theme">
+        <item>@array/watch_pop_analog_sub2_hand_ambient</item>
+    </string-array>
+
+    <array name="watch_pop_analog_sub2_hand_ambient">
+        <item>@drawable/watch_modi_sub_clock_ambient</item>
+        <item>@drawable/watch_modi_sub_hour_ambient</item>
+        <item>@drawable/watch_modi_sub_minute_ambient</item>
+    </array>
+    <array name="watch_pop_yellow_sub_theme">
+        <item>@array/watch_pop_yellow_h1_sub_theme</item>
+        <item>@array/watch_pop_yellow_h2_sub_theme</item>
+        <item>@array/watch_pop_yellow_m1_sub_theme</item>
+        <item>@array/watch_pop_yellow_m2_sub_theme</item>
+        <item>@array/watch_pop_yellow_colors_sub_theme</item>
+    </array>
+    <array name="watch_pop_yellow_h1_sub_theme">
+        <item>@drawable/watch_modi_sub_num_01_0_pink</item>
+        <item>@drawable/watch_modi_sub_num_01_1_pink</item>
+        <item>@drawable/watch_modi_sub_num_01_2_pink</item>
+    </array>
+    <array name="watch_pop_yellow_h2_sub_theme">
+        <item>@drawable/watch_modi_sub_num_02_0_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_1_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_2_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_3_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_4_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_5_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_6_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_7_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_8_violet</item>
+        <item>@drawable/watch_modi_sub_num_02_9_violet</item>
+    </array>
+    <array name="watch_pop_yellow_m1_sub_theme">
+        <item>@drawable/watch_modi_sub_num_03_0_green</item>
+        <item>@drawable/watch_modi_sub_num_03_1_green</item>
+        <item>@drawable/watch_modi_sub_num_03_2_green</item>
+        <item>@drawable/watch_modi_sub_num_03_3_green</item>
+        <item>@drawable/watch_modi_sub_num_03_4_green</item>
+        <item>@drawable/watch_modi_sub_num_03_5_green</item>
+    </array>
+    <array name="watch_pop_yellow_m2_sub_theme">
+        <item>@drawable/watch_modi_sub_num_04_0_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_1_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_2_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_3_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_4_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_5_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_6_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_7_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_8_blue</item>
+        <item>@drawable/watch_modi_sub_num_04_9_blue</item>
+    </array>
+    <array name="watch_pop_yellow_colors_sub_theme">
+        <item>@color/watch_modi_pop_yellow_background</item>
+        <item>@color/watch_white</item>
+    </array>
+    <array name="watch_pop_yellow_sub_ambient_theme">
+        <item>@array/watch_pop_yellow_h1_sub_ambient_theme</item>
+        <item>@array/watch_pop_yellow_h2_sub_ambient_theme</item>
+        <item>@array/watch_pop_yellow_m1_sub_ambient_theme</item>
+        <item>@array/watch_pop_yellow_m2_sub_ambient_theme</item>
+        <item>@array/watch_pop_yellow_colors_sub_ambient_theme</item>
+    </array>
+    <array name="watch_pop_yellow_h1_sub_ambient_theme">
+        <item>@drawable/watch_modi_sub_num_pop_black_01_0</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_01_1</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_01_2</item>
+    </array>
+    <array name="watch_pop_yellow_h2_sub_ambient_theme">
+        <item>@drawable/watch_modi_sub_num_pop_black_02_0</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_1</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_2</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_3</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_4</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_5</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_6</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_7</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_8</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_02_9</item>
+    </array>
+    <array name="watch_pop_yellow_m1_sub_ambient_theme">
+        <item>@drawable/watch_modi_sub_num_pop_black_03_0</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_03_1</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_03_2</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_03_3</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_03_4</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_03_5</item>
+    </array>
+    <array name="watch_pop_yellow_m2_sub_ambient_theme">
+        <item>@drawable/watch_modi_sub_num_pop_black_04_0</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_1</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_2</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_3</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_4</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_5</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_6</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_7</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_8</item>
+        <item>@drawable/watch_modi_sub_num_pop_black_04_9</item>
+    </array>
+    <array name="watch_pop_yellow_colors_sub_ambient_theme">
+        <item>@color/watch_modi_pop_black_background</item>
+        <item>@color/watch_white</item>
+    </array>
+
+</resources>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidwear.home.HomeActivity" >
+
+    <!-- status bar begin -->
+    <com.androidwear.home.view.HomeView
+        android:id="@+id/homeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- status bar end -->
+
+    <com.androidwear.home.view.SwipeDismissFrameLayout
+        android:id="@+id/voice_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="0.0dip"
+        android:visibility="gone" />
+
+</RelativeLayout>

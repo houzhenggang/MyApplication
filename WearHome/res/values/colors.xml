@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="digital_text_color">#ffffff</color>
+    <color name="background_light">#ffffff</color>
+    <color name="primary_text_light">#ff434343</color>
+    <color name="cw_wof_gray">#ffc1c1c1</color>
+    <color name="cw_dark_blue">#ff2955c5</color>
+    <color name="cw_blue">#ff2878ff</color>
+    <color name="secondary_text_light">#ffa2a2a2</color>
+    <color name="cw_white">#ffffffff</color>
+    <color name="cw_grey">#ff777777</color>
+    <color name="orb_active">#ffff5151</color>
+
+    <!-- for statsus bar begin -->
+    <color name="secondary_status_bar_shadow_color">#dd000000</color>
+    <!-- for status bar end -->
+    <color name="watchface_picker_bg_color">#ff444444</color>
+    <color name="watch_white">#ffffffff</color>
+    <color name="watch_black">#ff000000</color>
+    <color name="watch_date_blue">#ff00b4ff</color>
+    <color name="watch_modi_pop_yellow_background">#ffffdf11</color>
+    <color name="watch_modi_pop_blue_background">#ff28abff</color>
+    <color name="watch_modi_pop_black_background">#ff000000</color>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">问问Home</string>
+<string name="cue_menu_settings">设置</string>
+<string name="cue_menu_apps">开始…</string>
+<string name="cue_menu_take_a_note">记事本</string>
+<string name="cue_menu_text">发送信息</string>
+<string name="cue_menu_alarm">设置闹钟</string>
+<string name="cue_menu_show_alarms">显示闹钟</string>
+<string name="cue_menu_timer">设置定时器</string>
+<string name="cue_menu_stopwatch">启动秒表</string>
+<string name="cue_menu_agenda">日程</string>
+<string name="voice_action_remote_error">"抱歉！无法工作，请再试一次。"</string>
+<string name="disconnected">未连接</string>
+<string name="speak_now">请说话</string>
+<string name="open">打开</string>
+
+<!-- for status bar begin -->
+<string name="mute">静音</string>
+<!-- for status bar end -->
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:watchFace="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/backgroundimage"
+        android:layout_width="@dimen/clock_width"
+        android:layout_height="@dimen/clock_height"
+        android:src="@drawable/watch_modi_yellow_sub_bg" />
+
+    <com.androidwear.home.watchfaces.ustwowatchfaces2.customstyle.CompoundAnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17.0dip"
+        android:layout_marginTop="15.0dip"
+        watchFace:analogClockAmbientTheme="@array/watch_pop_analog_sub2_ambient_theme"
+        watchFace:analogClockTheme="@array/watch_pop_analog_sub2_theme"
+        watchFace:smallSizeStyle="true" />
+
+</FrameLayout>
